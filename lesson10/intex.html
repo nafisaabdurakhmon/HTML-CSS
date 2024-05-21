@@ -1,96 +1,195 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>html</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
-        *{
-            margin: 0;
-            padding: 0;
-        }
-        body{
-            background-image: url(https://t3.ftcdn.net/jpg/04/03/93/42/360_F_403934275_LJo8ldyyKA0U28B3mdHFPXNJxbfxie9t.jpg);
-            background-size: cover;
-            color: azure;
-            font-family: "Josefin Sans", sans-serif;
-        }
-        .hero{
-            display: flex;
-            height: 100vh;
-            overflow: hidden;
-        }
-        .hero div{
-            flex: 1;
-            width: 300px;
-        }
-        .hero-content{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            gap: 10px;
+      @import url("https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-image: url(https://www.mandiant.com/sites/default/files/2022-08/hero-banner-mwise.png);
+        background-size: cover;
+        color: azure;
+        font-family: "Josefin Sans", sans-serif;
+      }
+      .hero {
+        display: flex;
+        height: 100vh;
+        overflow: hidden;
+        padding: 100px;
+        letter-spacing: 3px;
+        line-height: 40px;
+      }
+      .hero div {
+        flex: 1;
+        width: 300px;
+      }
+      .hero-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+      }
+      .hero-contact img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      img {
+        width: 70px;
+      }
+      nav {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 70px;
+      }
+      ul {
+        list-style-type: none;
+        display: flex;
+        gap: 20px;
+        padding: 25px;
+        align-items: center;
+      }
+      h1{
+        font-size: 80px;
+      }
+      p{
+        font-size: 30px;
+      
+      }
+      header {
+        position: absolute;
+        left: 0;
+        right: 0;
+      }
+      .cards {
+        display: flex;
+        gap: 2rem;
+        color: rgb(140, 139, 139);
 
-        }
-        .hero-contact img{
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-          
-        }
-        img{
-            width: 70px;
-        }
-        nav{
-           display: flex;
-           justify-content: space-between;
-           padding: 20px 70px;
-        }
-        ul{
-            list-style-type: none;
-            display: flex;
-            gap: 20px;
-            padding: 25px;
-            align-items: center;
-        }
-        header{
+      }
+      .card {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        background-color: rgba(150, 70, 176, 0.42);
+        border-radius: 10px;
+        padding: 40px;
+        position: relative;
     
-            position: absolute;
-            left: 0;
-            right: 0;
-
-        }
+      }
+      .services {
+        display: flex;
+        flex-direction: column;
+        gap: 7rem;
+        padding: 100px;
+      }
+      .title {
+        text-align: center;
+        font-size: 100px;
+      }
+      h1 {
+        color: blueviolet;
+      }
+      .card h2 {
+        color: rgb(208, 123, 208);
+      }
+      .card p {
+        font-size: 18px;
+        line-height: 27px;
+        letter-spacing: 2px;
+      }
+      .card img {
+        width: 100px;
+        position: absolute;
+       top:-15px;
+        right: 90px;
+        left: 280px;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-<nav>
-    <img src="https://spline.design/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fspline_logo.647803e0.png&w=128&q=75" alt="">
-    <ul>
-        <li>About</li>
-        <li>Section</li>
-        <li>Contact</li>
-        <li>Home</li>
-    </ul>
-</nav>
+      <nav>
+        <img
+          src="https://cdn3d.iconscout.com/3d/premium/thumb/cube-10715438-8663012.png"
+          alt=""
+        />
+        <ul>
+          <li>About</li>
+          <li>Section</li>
+          <li>Contact</li>
+          <li>Home</li>
+        </ul>
+      </nav>
     </header>
     <main>
-<section class="hero">
-<div class="hero-content">
-<h1>MIAMI</h1>
-<p> Consequatur vero sequi officiis maiores blanditiis eum deserunt, eius corporis quod magni, facere, doloribus nostrum necessitatibus. Asperiores perspiciatis dolor laboriosam quis dignissimos?</p>
-</div>
-<div class="hero-contact">
-    <spline-viewer url="https://prod.spline.design/BES9A5rISrghW603/scene.splinecode"></spline-viewer>
-
-</div>
-</section>
+      <section class="hero">
+        <div class="hero-content">
+          <h1>CUBE</h1>
+          <p>
+            Consequatur vero sequi officiis maiores blanditiis eum deserunt,
+            eius corporis quod magni, facere, doloribus nostrum necessitatibus.
+            Asperiores perspiciatis dolor laboriosam quis dignissimos?
+          </p>
+        </div>
+        <div class="hero-contact">
+          <spline-viewer
+            url="https://prod.spline.design/BES9A5rISrghW603/scene.splinecode"
+          ></spline-viewer>
+        </div>
+      </section>
+      <section class="services">
+        <h1 class="title">OUR SERVICES</h1>
+        <div class="cards">
+          <div class="card">
+            <img
+              src="https://cdn3d.iconscout.com/3d/premium/thumb/games-cube-10434425-8402766.png"
+              alt=""
+            />
+            <h2>services 1</h2>
+            <p>
+              Minus sed illum, illo dignissimos incidunt reiciendis quaerat
+              corrupti delectus ducimus soluta praesentium ab alias enim,
+              commodi eligendi exercitationem?
+            </p>
+          </div>
+          <div class="card">
+            <img
+              src="https://cdn3d.iconscout.com/3d/premium/thumb/rubiks-cube-4116846-3414994.png"
+              alt="" width="100%"
+            />
+            <h2>services 2</h2>
+            <p>
+              Minus sed illum, illo dignissimos incidunt reiciendis quaerat
+              corrupti delectus ducimus soluta praesentium ab alias enim,
+              commodi eligendi exercitationem?
+            </p>
+          </div>
+          <div class="card">
+            <img
+              src="https://cdn3d.iconscout.com/3d/premium/thumb/rubik-cube-4022903-3328663.png"
+              alt=""
+            />
+            <h2>services 3</h2>
+            <p>
+              Minus sed illum, illo dignissimos incidunt reiciendis quaerat
+              corrupti delectus ducimus soluta praesentium ab alias enim,
+              commodi eligendi exercitationem?
+            </p>
+          </div>
+        </div>
+      </section>
     </main>
-    <footer>
-
-    </footer>
-    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.3.8/build/spline-viewer.js"></script>
-
-</body>
+    <footer></footer>
+    <script
+      type="module"
+      src="https://unpkg.com/@splinetool/viewer@1.3.8/build/spline-viewer.js"
+    ></script>
+  </body>
 </html>
