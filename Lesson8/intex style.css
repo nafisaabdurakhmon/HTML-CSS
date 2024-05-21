@@ -1,0 +1,39 @@
+.box{
+    height: 500px;
+    width: 100%;
+    background-color: fuchsia;
+    background-size: cover;
+    background-position: center;
+    animation: colorAnimation;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    
+
+}
+h1{
+    animation: text;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@keyframes colorAnimation{
+    from{
+        background-image: url("https://fruitboxco.com/cdn/shop/products/asset_40_5dbc9ea0-9f52-4be8-8c49-8e79b086a0b1_800x.jpg?v=1679632170");
+    }
+    to{
+        background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpMGKRCHBfC067DZvfbyXFUxIgAmHDPlJsKlC8PYVz4w&s/');
+    }
+}
+    
+
+    @keyframes text{
+    from{
+        color: aquamarine;
+    }
+    to{
+        color:yellow ;
+    }
+
+    }

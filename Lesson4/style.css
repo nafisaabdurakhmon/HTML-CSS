@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: aquamarine;
+
+}
+main{
+    height: 100%;
+}
+
+footer{
+    background-color:rgb(43, 226, 80);
+    height: 100px;
+}
+h1{
+    
+    background-color: brown;
+    border:5px solid greenyellow;
+    padding-top: 10px;
+    margin-bottom:50px ;
+}
+ ul{
+    list-style-type: none;
+    background-color: rgb(29, 117, 87);
+    height: 40px;
+ }
+ li{
+    float: left;
+ }
+
+ li a{
+    display:block;
+    font-size: 20px;
+    padding: 10px;
+    text-decoration: none;
+    color: rgb(127, 163, 255);
+
+ }
+ nav{
+    padding: 20px;
+    height: 100%;
+
+ }
+ li a:hover {
+    background-color: rgb(246, 254, 10);
+    border-radius: 50px;
+ } 

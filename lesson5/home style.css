@@ -1,0 +1,100 @@
+*{  padding: 0;
+    margin: 0;} 
+    .hero{
+        background-image:url(https://api.lesailes.uz/storage/sliders/2023/10/05/9F7Q9L8M59qgYvnVOqndo7LGkjSx0mwr6x1SJEry.jpg) ;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+        display: flex;
+    }
+.hero-contect{
+    width: 60px;
+    text-align: center;
+    color: aqua;
+}
+.card{
+    width:300px;
+    border:1px solid springgreen ;
+    background-color: rgb(239, 230, 230);
+    color: cadetblue;
+}
+.img{
+width: 100%;
+}
+.card-content{
+    padding: 10px;
+}
+.card-title{
+    
+
+}
+.card-descprition{
+
+}
+.card-button{
+    padding:5px 50px;
+    background-color: aqua;
+    color: blue;
+    border: 2px solid slateblue;
+
+
+}
+.card-button:hover{
+    background-color: brown;
+    border-radius: 15px;
+
+}
+.box-card{
+    display: flex;
+    gap: 20px;
+
+}
+ul{
+    list-style-type: none;
+    background-color: rgb(249, 229, 117);
+    height: 40px;
+ }
+ li{
+    float: left;
+ }
+ li a{
+    display:block;
+    font-size: 20px;
+    padding: 10px;
+    text-decoration: none;
+    color: rgb(241, 182, 182);
+
+ }
+ nav{
+    padding: 20px;
+    height: 100%;
+
+ }
+ li a:hover {
+    background-color: rgb(95, 227, 239);
+    border-radius: 50px;
+ } 
+ footer{
+    background-color:rgb(12, 213, 203);
+    height: 100px;
+}
+h1{ padding: 10px;
+    border:10px solid rgb(157, 214, 182);
+    background-image: url(https://lesailes.uz/assets/main_logo.svg);
+    background-size: contain;
+    background-position: left;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+body{ 
+    background-color: cornsilk;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+}
+
+

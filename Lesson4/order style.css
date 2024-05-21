@@ -1,0 +1,73 @@
+html{
+    scroll-behavior:smooth ;}
+
+body{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiouN03Mpd23-8FUrFoHANjTOKAMDKhRreyA&usqp=CAU);
+    background-size: cover;
+    margin-right: 10px;
+    margin-left: 10px;
+    text-align: center;
+}
+.hero{
+    background-image: url(https://www.traveloffpath.com/wp-content/uploads/2022/01/miami-city-1024x683.jpg.webp);
+    background-size: cover;
+    background-position:center ;
+    background-attachment: fixed;
+    height: 80vh; ;
+    text-align: center;
+}
+h1{
+    padding: 20px;
+    border:10px solid brown ;
+    background-image: url(https://w7.pngwing.com/pngs/693/111/png-transparent-american-flag-united-states-flag-usa-thumbnail.png);
+    background-size: contain;
+    background-image:left ;
+   background-repeat: no-repeat; 
+}
+ul{
+    list-style-type: none;
+    text-align: center;
+}
+li a{
+    display: block;
+    font: size 20px; ;
+    padding: 10px;
+    text-decoration:none ;
+    color: aquamarine;
+}
+nav{
+    padding: 10px;
+    height: 25px;
+    background-color: rgb(197, 168, 224);
+    overflow: hidden;
+}
+li a:hover {
+    background-color: aqua;
+    border-radius: 30px;
+}
+p{
+    font-size: 25px;
+}
+nav a {
+    float: left;
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: bisque;
+}
+td img{
+    width: 400px; ;
+}
+table{
+    width:100px;
+    text-align: center;
+}
+th{
+    background-color: rgb(173, 74, 200);
+}
+td{
+    background-image: url(https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcm0zMDktYWRqLTA1LmpwZw.jpg);
+    background-size: cover;
+    font-size: 60px;
+    color: brown;
+}

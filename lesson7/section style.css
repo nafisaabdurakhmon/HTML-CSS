@@ -1,0 +1,73 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+.card{
+width: 600px;
+height: fit-content;
+background-color:rgb(255, 255, 255);
+border-radius: 10px;
+overflow:hidden ;
+flex-direction: column;
+gap: 20px;
+padding: 20px;
+
+}
+.card-img{
+width: 100%;
+border-radius: 10px;
+}
+.card-content{
+flex-direction: column;
+gap: 20px;
+padding: 15px;
+background-color: hsl(328, 73%, 90%);
+border-radius: 10px;
+
+}
+
+body{
+    height: 100vh;
+    background-color: rgb(218, 205, 189);
+
+}
+
+section {
+    display: flex;
+     justify-content:center ;
+}
+ 
+h4{
+    color: hsl(286, 24%, 35%);
+}
+
+h2, h1 {
+    margin: 20px 0px;
+    
+
+}
+h2{
+    color: darkred;
+    font-family: "Merienda", cursive;
+}
+hr {
+    margin-top: 20px;
+}
+table{
+    width: 100%;
+    text-align: center;
+    
+}
+h5{
+    margin: 20px 0px;
+}
+th, td {
+    border-bottom: 1px solid rgba(128, 128, 128, 0.273);
+    padding: 10px;
+}
+footer{
+    padding: 10px;
+    text-align: center;
+}

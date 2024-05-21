@@ -1,0 +1,82 @@
+html {
+    scroll-behavior: smooth;
+}
+body{
+    background-image: url(https://img.freepik.com/premium-photo/ingredients-cooking-food-background-with-herbs-vegetables-top-view-white-background_1040174-1574.jpg?size=626&ext=jpg&ga=GA1.1.1700460183.1708128000&semt=ais);
+    background-size: cover;
+    margin-left:10% ;
+    margin-right: 10%;
+    text-align: center;
+}
+.hero{
+    background-image:url(https://img.lovepik.com/photo/45008/3762.jpg_wh860.jpg) ;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height:80vh ;
+    text-align: center;
+}
+h1{
+    padding: 10%px;
+    border: 10px solid gold;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWtH3BClAXh5PGzsljwmHy9Ct5e_He7pWfKg&usqp=CAU);
+    background-size: contain;
+    background-image: left;
+    background-repeat:no-repeat ;
+}
+ul{
+    list-style-type: none;
+    text-align: center;
+}
+li a{
+    display: block;
+    font-size: 20px;
+    padding: 10px;
+    text-decoration: none;
+    color:greenyellow ;
+}
+nav{
+    padding:10px ;
+    height: 25px;
+    background-color: rgb(214, 138, 235);
+    overflow: hidden;
+}
+p{
+    font-size: 25px;
+}
+nav a{
+    float: left;
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: bisque;
+}
+nav a:hover{
+    background-color: rgb(96, 96, 154);
+    border:3px double ;
+    border-radius: 26px;
+}
+
+td img{
+    width: 400px;
+
+}
+table{
+    width: 100%;
+    text-align: center;
+}
+th{
+    background-color: rgb(20, 138, 159);
+
+}
+td{
+    background-image: url(https://t4.ftcdn.net/jpg/05/57/17/57/360_F_557175704_ZGmk7CFvRMUD1h1qTv4s6TJ8nYzxkiTe.jpg);
+    background-size: cover;
+    font-size: 60px;
+    color: blueviolet;
+}
+li a:hover{
+    background-color: rgb(4, 77, 23);
+    border-radius: 30px;
+}
+

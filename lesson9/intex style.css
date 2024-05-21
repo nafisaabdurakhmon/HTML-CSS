@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.grid {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.card:nth-child(1) {
+  grid-column:span 2;
+  background-color: blue !important;
+  
+}
+
+
+.three{
+    grid-row: span 3;
+    background-color:green !important;
+    
+}
+.five{
+    grid-column: span 2;
+    background-color: chocolate !important;
+}
+.seven{
+  grid-column: span 2;
+}
+.grid-item {
+  background-color: red;
+  min-height: 200px;
+  min-width: 200px;
+  display: grid;
+  place-items: center;
+  color: burlywood;
+
+}
+.grid-item:hover{
+  transform: scale(1.1);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  transition: 0.4s;
+}
+.grid-item:nth-child(1){
+  background-image: url(https://cdn.pixabay.com/photo/2016/05/05/02/37/sunset-1373171_1280.jpg);
+  background-size: cover;
+}
+ 
+.grid-item:nth-child(2){
+  background-image: url(https://buffer.com/library/content/images/2023/10/free-images.jpg);
+  background-size: cover;
+}
+.grid-item:nth-child(3){
+  background-image: url(https://media.macphun.com/img/uploads/customer/how-to/608/15542038745ca344e267fb80.28757312.jpg?q=85&w=1340);
+  background-size: cover;
+}
+.grid-item:nth-child(4){
+  background-image: url(https://media.gettyimages.com/id/1249041775/fr/photo/photo-repr%C3%A9sentant-la-personne-qui-se-concentre-sur-la-cible.jpg?s=612x612&w=gi&k=20&c=DgVGyIcsxMkeHwi_jDIrpDzFjTScQsNeW_e7ZHnxjyo=);
+  background-size: cover;
+}
+.grid-item:nth-child(5){
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEzQhMzN0sJnGfqdi2aHD7fzZWirfyYB1DoFc7EQPiUQ&s);
+  background-size: cover;
+}
+.grid-item:nth-child(6){
+  background-image: url(https://www.industrialempathy.com/img/remote/ZiClJf-1920w.jpg);
+  background-size: cover;
+}
+.grid-item:nth-child(7){
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Image_circle.jpg/1200px-Image_circle.jpg);
+  background-size: cover;
+}
+.grid-item:nth-child(8){
+  background-image: url(https://th.bing.com/th/id/OIG3.5u5ZBGkvLQn1ELp4UqXH);
+  background-size: cover;
+}

@@ -1,0 +1,69 @@
+*{
+    padding:0 ;
+    margin: 0;
+}
+.hero{
+    background-image:url(https://cdn4.vectorstock.com/i/1000x1000/01/63/fast-food-menu-cover-burger-combo-snacks-vector-35210163.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+}
+.hero-contect{
+    width: 60px;
+    text-align: center;
+    color: aqua;
+}
+p{
+   text-align: right;
+}
+.recipe {
+    display: flex;
+}
+.card{
+    width: 300px;
+    border: 1px solid rgb(15, 193, 220);
+    background-color: rgb(198, 198, 191);
+    color: beige;}
+.img{
+    width: 100%;
+}
+.card-content{
+    padding: 10px;
+}
+.card-title{
+
+}
+.card-descprition{
+
+}
+.card-button{
+    padding: 5px 50px;
+    background-color: rgb(5, 226, 218);
+    color: bisque;
+    border: 2px solid rgb(211, 94, 94);
+}
+.card-button:hover{
+    background-color: rgb(255, 0, 0);
+    border-radius: 15px;
+}
+.box-card{
+    display: flex;
+    gap:20px ;
+
+}
+body{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOks6zBE-izONhOj2em1_Iks_JUodm4gxhYK0C1rYGDgBqiSA2g2knmDP4V0Kib0Kq5ls&usqp=CAU);
+    background-size: cover;
+    text-align: center;
+}
+h1 {
+    padding: 20px;
+    border: 1px solid red;
+    background-image: url(https://img.freepik.com/free-psd/isolated-hamburger-with-splash-ink-background_1409-3855.jpg?size=338&ext=jpg&ga=GA1.1.1700460183.1712016000&semt=ais);
+    background-size: contain;
+    background-position: left;
+    background-repeat: no-repeat;
+}
+
+

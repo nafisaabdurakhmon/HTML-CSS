@@ -1,0 +1,30 @@
+body{
+   
+ background-image: url(https://pub-static.fotor.com/assets/bg/569599b0-788e-423a-8bab-06785108b54c.jpg);
+ background-size: cover;
+    color:rgb(6, 18, 16);
+      
+}
+img{
+    border:10px solid rgb(192, 205, 50);
+    border-radius: 50px;
+    
+
+}
+h1{
+    text-align: center;
+    font-size:xx-large ;
+}
+
+section {
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+

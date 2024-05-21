@@ -1,0 +1,53 @@
+.parent{
+    position: relative;
+   width: 100%; 
+   height: 500px;
+   background-color: bisque;
+}
+.child{
+    position: absolute;
+    top:200;
+    left: 20px;
+    background-color: blue;
+}
+
+.card{
+    width: 300px;
+    border: 1px solid skyblue;
+    background-color: black;
+    color: beige;
+
+
+}
+.card-img{
+    width: 100%;
+
+}
+.card-content{
+    padding: 10px;
+
+}
+.card-title{
+
+}
+.card-descprition{
+
+}
+.card-button{
+    padding: 5px 50px;
+    background-color: aquamarine;
+    color: blanchedalmond;
+    border: 1px solid saddlebrown;
+
+
+}
+.card-button:hover{
+    background-color: blue;
+    border-radius: 15px;
+
+}
+.box-card{
+    display: flex;
+    gap:20px ;
+
+}

@@ -1,0 +1,48 @@
+.container{
+    background-color: bisque;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+    row-gap: 5px;
+    column-gap: 10px;
+    justify-content: space-between;
+    
+}
+.item{
+    background-color: aqua;
+    padding:20px ;
+    flex-grow: 1;
+}
+.logo{
+height: 60px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: slateblue;
+    padding: 15px;
+    border-bottom: 1px solid wheat;
+}
+
+.login button{
+    padding: 5px 24px;
+    background-color:skyblue;
+    border: none;
+    border-radius: 25px;
+}
+
+
+
+.box{
+    height: 100px;
+    width: 100px;
+    background-color: chocolate;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box h1{
+    align-self: flex-end;
+}

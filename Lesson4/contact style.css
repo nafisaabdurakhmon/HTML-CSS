@@ -1,0 +1,37 @@
+* {
+    margin:0 ;
+    padding: 0;
+}
+header{
+    background-color: beige;
+}
+h1{
+    text-align: left;
+    border: 15px solid rgb(195, 239, 194);
+    padding-top:10px;
+    margin-bottom:50px ;
+}
+ul{
+    list-style-type: none;
+    text-align: center;
+
+}
+li{
+    float: center;
+    
+}
+li a{
+    display: block;
+    font-size:20px ;
+    padding: 10px;
+    text-decoration: none;
+    color: rgb(95, 60, 16);
+}
+nav{
+    padding: 20px;
+    height: 100px;
+}
+li a:hover{
+    background-color: aqua;
+    border-radius: 30px;
+}

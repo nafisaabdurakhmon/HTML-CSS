@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.card{
+    width: 200px;
+}
+.profile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column ;
+    gap: 15px;
+}
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+p{
+    display: flex;
+    justify-content: center;
+    align-items: center;}
+    
+.stat {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+.card-profile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:15px ;
+    padding:10px ;
+}
+.card-content{
+    background-color: aquamarine;
+    padding: 15px;
+}
+.card-content img{
+    width: 100%;
+}
+button{
+    padding:5px 10px;
+    background-color: aqua;
+    color: rgb(0, 234, 255);
+    border: 2px solid slateblue;
+    border-radius: 10px;
+}
+button:hover{
+    background-color: crimson;
+    
+}

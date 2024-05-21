@@ -1,0 +1,41 @@
+.grid{
+    display: grid;
+    gap: 16px;
+    height: 100vh;
+    grid-template-areas: 
+    "🛑 🛑 🔵 🟡"
+    "🟣 🟢 🟢 🟡";
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+   grid-template-rows:1fr 1fr  ;
+
+}
+.navbar{
+    grid-area: 🛑;
+    background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsoR3Us3A4iJJ2sovMLg11TLx7qNJ9bFnoQOsc6Qfpag&s) ;
+    background-size: cover;
+    border-radius: 15px;
+}
+.saibar{
+    grid-area: 🔵;
+    background-image: url(https://i.pinimg.com/736x/06/54/7a/06547a402611c9e9157175f37f329823.jpg);
+    background-size: cover;
+    border-radius: 15px;
+}
+.saibar2{
+    grid-area:🟣 ;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkHhGP8axcUC4Z6C70_cyNV2o0vYmBJn7Yd8Stid1USw&s);
+    background-size: cover;
+    border-radius: 15px;
+}
+.main{
+    grid-area: 🟡;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0v60DhmfsZ7XjnV5xX6M7211Ca9jdgTV_Rlyn-qg3zA&s);
+    background-size: cover;
+    border-radius: 15px;
+}
+.footer{
+    grid-area: 🟢;
+    background-image: url(https://flowermoxie.com/cdn/shop/files/53157922450_11e4d9c86d_o.jpg?v=1694101337);
+    background-size: cover;
+    border-radius: 15px;
+}

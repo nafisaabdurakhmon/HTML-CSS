@@ -1,0 +1,22 @@
+body{
+    background-color: rgb(255, 251, 248);
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWo1c9DhgqGIvqPOunVkEiCVJ_D6CCGKU1lKaIGFaxrj_R4c4GgMj0HB50R56jyf29oWk&usqp=CAU
+    );
+    background-size: cover;
+    text-align: center;
+}
+table,th,td,tr{
+    border:15px solid yellowgreen;
+}
+table{
+    text-align: center; 
+    width: 100%;
+}
+h1,h2,h3,h4 {
+    text-align: center;
+    width: 100%;
+    
+}
+section{
+    background-color: blanchedalmond;
+}

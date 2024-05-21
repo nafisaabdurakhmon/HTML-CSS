@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.card {
+  width: 250px;
+  height: fit-content;
+  background-color: white;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.card-content {
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+
+.card-img {
+  width: 100%;
+}
+.card {
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: gold;
+}
+.profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.content h4 {
+  background-color: gold;
+  border: 2px solid gold;
+  width: fit-content;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
