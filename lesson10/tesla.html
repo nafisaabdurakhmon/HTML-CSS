@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      nav {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 40px;
+      }
+      nav img {
+        width: 100px;
+      }
+      .icon img {
+        width: 25px !important;
+      }
+      ul {
+        list-style-type: none;
+      }
+      nav ul {
+        display: flex;
+        gap: 10px;
+      }
+      .Model-y {
+        background-image: url(https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Model-Y-Desktop-Global.png);
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 100vh;
+        gap: 20rem;
+        text-align: center;
+      }
+      header {
+        position: absolute;
+        left: 0;
+        right: 0;
+      }
+      .card-href {
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+        padding-top: 95px;
+      }
+
+      button1 {
+        padding: 10px 80px;
+        margin: 10px;
+        border: 1px solid rgb(239, 239, 239);
+        border-radius: 5px;
+        background-color: rgba(255, 255, 255, 0.8);
+        color: black;
+      }
+
+      button2 {
+        padding: 10px 80px;
+        margin: 10px;
+        border: 1px solid rgba(34, 34, 34, 0.65);
+        border-radius: 5px;
+        background-color: rgba(34, 34, 34, 0.65);
+        color: white;
+      }
+      .Model3 {
+        background-image: url(https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Model-3-Desktop-LHD-v2.jpg);
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 100vh;
+        gap: 20rem;
+        text-align: center;
+      }
+      .content {
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+        padding-top: 95px;
+      }
+      .ModelX {
+        background-image: url(https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Model-X-Desktop.jpg);
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 100vh;
+        gap: 20rem;
+        text-align: center;
+      }
+      .ModelS {
+        background-image: url(https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Model-S-Desktop-LHD-6.22.jpg);
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 100vh;
+        gap: 20rem;
+        text-align: center;
+      }
+      .Saybertrak {
+        background-image: url(https://digitalassets.tesla.com/discovery-tesla-com/image/upload/f_auto,q_auto/Homepage-Cybertruck-Desktop.jpg);
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 100vh;
+        gap: 20rem;
+        text-align: center;
+      }
+      button {
+        padding: 10px 80px;
+        margin: 10px;
+        border: 1px solid  rgba(75, 72, 72, 0.8);
+        background-color: rgba(17, 17, 17, 0.95);;
+        color: dimgray;
+      }
+
+      
+
+      .SolarPanels{
+        background-image: url(https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-SolarPanels-01-Desktop);
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 100vh;
+        gap: 20rem;
+        text-align: center;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <img src="logo.svg" alt="" />
+        <ul>
+          <li>Vehicles</li>
+          <li>Energy</li>
+          <li>Charging</li>
+          <li>Discover</li>
+          <li>Shop</li>
+        </ul>
+        <ul class="icon">
+          <li><img src="icon help.svg" alt="" /></li>
+          <li><img src="icon global.svg" alt="" /></li>
+          <li><img src="icon personal.svg" alt="" /></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="Model-y">
+        <div class="card-href">
+          <h1>Model Y</h1>
+          <a href="">0.99% APR Financing</a>
+          <p>From $299/mo¹ Lease After Est. Gas Savings</p>
+        </div>
+        <div class="card-button">
+          <button1>Order Now</button1>
+          <button2>Demo Drive</button2>
+        </div>
+      </section>
+      <section class="Model3">
+        <div class="content">
+          <h1>Model 3</h1>
+          <h2>From $33,990²</h2>
+          <p>After Est. Savings</p>
+        </div>
+
+        <div class="card-button">
+          <button1>Order Now</button1>
+          <button2>Demo Drive</button2>
+        </div>
+      </section>
+      <section class="ModelX">
+        <div class="content">
+          <h1>Model X</h1>
+          <h2>From $63,990³</h2>
+          <p>After Est. Savings</p>
+        </div>
+
+        <div class="card-button">
+          <button1>Order Now</button1>
+          <button2>Demo Drive</button2>
+        </div>
+      </section>
+      <section class="ModelS">
+        <div class="content">
+          <h1>Model S</h1>
+          <h2>From $66,490</h2>
+          <p>After Est. Savings</p>
+        </div>
+        <div class="card-button">
+          <button1>Order Now</button1>
+          <button2>Demo Drive</button2>
+        </div>
+      </section>
+      <section class="Saybertrak">
+        <div class="content">
+       <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Cybertrucklogo.svg/1280px-Cybertrucklogo.svg.png" width="400px" alt="">
+        </div>
+        <div class="card-button">
+          <button>ORDER NOW</button>
+          <button>LEARN MORE</button>
+        </div>
+      </section>
+      <section class="SolarPanels">
+        <div class="content">
+          <h1>Solar Panels</h1>
+      <a href="">Schedule a Virtual Consultation</a>
+        </div>
+        <div class="card-button">
+          <button1>Order Now</button1>
+          <button2>Demo Drive</button2>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
+</html>
