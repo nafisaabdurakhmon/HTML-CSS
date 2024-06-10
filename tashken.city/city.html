@@ -1,0 +1,1259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tashkent City</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Onest:wght@298&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      .contenir {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0px 10px;
+      }
+      nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: white;
+        padding: 20px;
+      }
+      .rem {
+        position: absolute;
+        top: 23px;
+        left: 150px;
+        right: 0;
+        border: 1px solid black;
+        border-radius: 90px;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .menu {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        padding: 10px 30px;
+        border-radius: 50px;
+        background-color: burlywood;
+      }
+      .menu a {
+        color: white;
+      }
+      .time {
+        position: absolute;
+        top: 10px;
+        left: 255px;
+        right: 0;
+      }
+      .tashkent {
+        position: absolute;
+        top: 10px;
+        left: 655px;
+        right: 0;
+      }
+      .city {
+        position: absolute;
+        top: 83px;
+        left: 660px;
+        right: 0;
+        background-color: white;
+        padding-left: 5px;
+        padding-top: 10px;
+        height: 35px;
+        width: 90px;
+        border-radius: 7px;
+      }
+      header {
+        position: absolute;
+        left: 0;
+        right: 0;
+      }
+      .parking {
+        position: absolute;
+        top: 35px;
+        left: 400px;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+      }
+      .parking a {
+        border: 1px solid black;
+        border-radius: 5px;
+        width: 20px;
+        height: 20px;
+      }
+      .directions {
+        position: absolute;
+        top: 36px;
+        left: 650px;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .pois {
+        position: absolute;
+        top: 28px;
+        left: 950px;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .pois a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 150px;
+        border: 1px solid black;
+        width: 40px;
+        height: 40px;
+      }
+
+      .box {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1000rem;
+        position: relative;
+        background-color: burlywood;
+        padding: 15px 40px;
+        border-radius: 20px;
+      }
+
+      .box img {
+        position: absolute;
+        left: 0;
+        right: 0;
+        width: 25px;
+      }
+      .box a {
+        color: white;
+      }
+      a {
+        text-decoration: none;
+      }
+
+      .hero {
+        padding: 40px 0;
+      }
+      video {
+        width: 100%;
+      }
+      .card-box {
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+      }
+      .shop {
+        background-image: url(https://cdn.crispedge.com/1c305c.png);
+        background-size: cover;
+        width: 16%;
+        padding: 50px;
+        border-radius: 12px;
+      }
+      .cafe {
+        background-image: url(https://cdn.crispedge.com/1c305c.png);
+        background-size: cover;
+        width: 16%;
+        padding: 50px;
+        border-radius: 12px;
+      }
+      .entertainmet {
+        background-image: url(https://cdn.crispedge.com/1c305c.png);
+        background-size: cover;
+        width: 16%;
+        padding: 50px;
+        border-radius: 12px;
+      }
+      .services {
+        background-image: url(https://cdn.crispedge.com/1c305c.png);
+        background-size: cover;
+        width: 16%;
+        padding: 50px;
+        border-radius: 12px;
+        gap: 10px;
+      }
+      h1 {
+        color: whitesmoke;
+        text-align: center;
+        font-size: 18px;
+        top: 2rem;
+      }
+
+      .data {
+        position: absolute;
+        left: 0;
+        right: 70rem;
+        top: 108rem;
+        font-size: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        color: white;
+      }
+      .news img {
+        padding: 50px 20px;
+        width: 45%;
+        border-radius: 20px;
+      }
+      .title {
+        position: absolute;
+        left: 70px;
+        right: 50rem;
+        top: 110rem;
+        font-size: 25px;
+        line-height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        color: white;
+      }
+      button {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        left: 90px;
+        right: 0;
+        top: 121rem;
+        border-radius: 80px;
+        width: 230px;
+        height: 50px;
+        background-color: rgba(255, 255, 255, 0);
+        border: 1px solid white;
+        font-size: 23px;
+      }
+      button:hover {
+        background-color: aliceblue;
+      }
+      .news a {
+        color: rgba(6, 6, 6, 0.766);
+      }
+      .news h1 {
+        color: black;
+        font-size: 3.875rem;
+        padding: 20px;
+        padding-top: 80px;
+        font-weight: 100;
+        font-family: var(--font-kudryashev);
+      }
+      .profil img {
+        width: 45%;
+        border-radius: 10px;
+      }
+      .profil {
+        position: absolute;
+        top: 87rem;
+        left: 720px;
+        right: 0;
+      }
+      h4 {
+        color: silver;
+        padding: 13px;
+        letter-spacing: 2px;
+        font-size: 20px;
+        font-weight: 100;
+      }
+
+      .title2 {
+        padding-right: 400px;
+        line-height: 35px;
+        letter-spacing: 1px;
+        font-size: 15px;
+        font-weight: 100;
+      }
+      .profil a {
+        color: burlywood;
+        line-height: 70px;
+        font-size: 23px;
+        font-weight: 100;
+      }
+      .profil-car {
+        position: absolute;
+        top: 87rem;
+        left: 68rem;
+        right: 0;
+      }
+      .title3 {
+        padding-right: 100px;
+        line-height: 35px;
+        letter-spacing: 1px;
+        font-size: 15px;
+        font-weight: 100;
+      }
+
+      .profil-car img {
+        width: 92%;
+        border-radius: 10px;
+      }
+      .profil-car a {
+        color: burlywood;
+        line-height: 70px;
+        font-size: 23px;
+        font-weight: 100;
+      }
+      .button {
+        padding-right: 20px;
+        border: 1px solid rgb(188, 125, 107, 1);
+        border-radius: 50px;
+        width: 300px;
+        height: 50px;
+        text-align: center;
+      }
+      button2 {
+        position: absolute;
+        left: 0;
+        right: 80px;
+        top: 34rem;
+      }
+      .button:hover {
+        background-color: rgb(188, 125, 107, 1);
+        color: rgb(228, 225, 222);
+      }
+      .button a {
+        color: black;
+      }
+      .cards {
+        background-image: url(https://static.vecteezy.com/system/resources/thumbnails/006/327/095/small/dark-blue-gradient-colors-abstract-blurred-background-for-landing-page-free-vector.jpg);
+        background-size: cover;
+        height: 180vh;
+        display: flex;
+        flex-direction: row;
+      }
+      .consep {
+        width: 304px;
+        height: fit-content;
+        padding: 60px 30px;
+      }
+      .adidas {
+        display: flex;
+        flex-direction: column;
+        border-radius: 0.5rem;
+        --tw-bg-opacity: 1;
+        background-color: white;
+        gap: 20px;
+        padding: 20px;
+        padding-bottom: 100px;
+      }
+      .adidas img {
+        width: 55%;
+        height: 120px;
+        background-color: #f7f2f0;
+        padding: 7px 58px;
+        border-radius: 10px;
+      }
+      .cards h1 {
+        display: flex;
+        flex-direction: row;
+        color: black;
+        font-size: 22px;
+        font-weight: 200;
+      }
+      .cards p {
+        color: rgb(120, 123, 127);
+      }
+      .disecrepsion {
+        position: absolute;
+        left: 65px;
+        right: 0;
+        top: 153rem;
+      }
+      button3 {
+        display: flex;
+        flex-direction: column;
+        width: 100px;
+        height: 23px;
+        background-color: #f7f2f0;
+        border-radius: 10px;
+      }
+      button3:hover {
+        padding: 2px 10px;
+        border-radius: 10px;
+        background-color: #121111;
+        color: azure;
+      }
+      button3 a {
+        color: rgb(61, 49, 49);
+      }
+      .map a {
+        position: absolute;
+        left: 220px;
+        right: 0;
+        top: 153rem;
+        color: burlywood;
+      }
+      .tenat-card {
+        width: 304px;
+        height: fit-content;
+        padding: 60px 30px;
+      }
+
+      .stardivarius {
+        display: flex;
+        flex-direction: column;
+        border-radius: 0.5rem;
+        --tw-bg-opacity: 1;
+        background-color: white;
+        gap: 20px;
+        padding: 20px;
+        padding-bottom: 100px;
+      }
+      .stardivarius img {
+        width: 55%;
+        height: 120px;
+        background-color: #f7f2f0;
+        padding: 7px 58px;
+        border-radius: 10px;
+      }
+      .stardivarius p {
+        color: rgb(120, 123, 127);
+      }
+      .else {
+        position: absolute;
+        left: 420px;
+        right: 0;
+        top: 153rem;
+      }
+
+      button4 {
+        display: flex;
+        flex-direction: column;
+        background-color: #f7f2f0;
+        border-radius: 10px;
+        width: 90px;
+        height: 20px;
+      }
+      button4:hover {
+        background-color: #121111;
+        border-radius: 10px;
+        padding: 2px 10px;
+      }
+      button4 a {
+        color: rgb(61, 49, 49);
+      }
+
+      .map2 a {
+        position: absolute;
+        left: 580px;
+        right: 0;
+        top: 153rem;
+        color: burlywood;
+      }
+
+      .floor {
+        position: absolute;
+        left: 790px;
+        right: 0;
+        top: 153rem;
+      }
+      .map3 a {
+        position: absolute;
+        left: 940px;
+        right: 0;
+        top: 153rem;
+        color: #d5ae7b;
+      }
+      .saber {
+        display: flex;
+        flex-direction: column;
+        border-radius: 0.5rem;
+        --tw-bg-opacity: 1;
+        background-color: white;
+        gap: 20px;
+        padding: 20px;
+        padding-bottom: 115px;
+      }
+      .saber img {
+        width: 55%;
+        height: 120px;
+        background-color: #f7f2f0;
+        padding: 7px 58px;
+        border-radius: 10px;
+      }
+      .floor-st {
+        position: absolute;
+        left: 1150px;
+        right: 0;
+        top: 153rem;
+      }
+      .map4 a {
+        position: absolute;
+        left: 1300px;
+        right: 0;
+        top: 153rem;
+        color: #d5ae7b;
+      }
+      .order {
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        top: 155pc;
+      }
+      .order h1 {
+        display: flex;
+        flex-direction: row;
+        color: black;
+        font-size: 22px;
+        font-weight: 200;
+      }
+      .bershka {
+        display: flex;
+        flex-direction: column;
+        border-radius: 0.5rem;
+        --tw-bg-opacity: 1;
+        background-color: white;
+        gap: 20px;
+        padding: 30px;
+        padding-bottom: 115px;
+      }
+      .bershka img {
+        width: 55%;
+        height: 120px;
+        background-color: #f7f2f0;
+        padding: 7px 58px;
+        border-radius: 10px;
+      }
+      .bershka1 {
+        display: flex;
+        flex-direction: column;
+        border-radius: 0.5rem;
+        --tw-bg-opacity: 1;
+        background-color: white;
+        gap: 20px;
+        padding: 30px;
+        padding-bottom: 115px;
+      }
+
+      .bershka1 img {
+        width: 55%;
+        height: 135px;
+        background-color: #f7f2f0;
+        padding: 7px 58px;
+        border-radius: 10px;
+      }
+      .map5 a {
+        position: absolute;
+        left: 219px;
+        right: 0;
+        top: 23rem;
+        color: #d5ae7b;
+      }
+      .floor-nd {
+        position: absolute;
+        left: 55px;
+        right: 0;
+        top: 23rem;
+      }
+      .map6 a {
+        position: absolute;
+        left: 585px;
+        right: 0;
+        top: 23rem;
+        color: #d5ae7b;
+      }
+      .floor-2nd {
+        position: absolute;
+        left: 420px;
+        right: 0;
+        top: 23rem;
+      }
+      .map7 a {
+        position: absolute;
+        left: 940px;
+        right: 0;
+        top: 23rem;
+        color: #d5ae7b;
+      }
+
+      .floor-1st {
+        position: absolute;
+        left: 785px;
+        right: 0;
+        top: 23rem;
+      }
+      .map8 a {
+        position: absolute;
+        left: 1310px;
+        right: 0;
+        top: 23rem;
+        color: #d5ae7b;
+      }
+
+      .floor-4th {
+        position: absolute;
+        left: 1150px;
+        right: 0;
+        top: 23rem;
+      }
+
+      .cinema {
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        top: 182pc;
+      }
+      .cinema1 {
+        display: flex;
+        flex-direction: column;
+        border-radius: 0.5rem;
+        --tw-bg-opacity: 1;
+        background-color: white;
+        gap: 20px;
+        padding: 30px;
+        padding-bottom: 115px;
+      }
+
+      .cinema1 img {
+        width: 55%;
+        height: 135px;
+        background-color: #f7f2f0;
+        padding: 7px 58px;
+        border-radius: 10px;
+      }
+      .cinema h1 {
+        display: flex;
+        flex-direction: row;
+        color: black;
+        font-size: 22px;
+        font-weight: 200;
+      }
+      .map9 a {
+        position: absolute;
+        left: 219px;
+        right: 0;
+        top: 24rem;
+        color: #d5ae7b;
+      }
+
+      .floor-5th {
+        position: absolute;
+        left: 68px;
+        right: 0;
+        top: 24rem;
+      }
+
+      .map10 a {
+        position: absolute;
+        left: 587px;
+        right: 0;
+        top: 24rem;
+        color: #d5ae7b;
+      }
+
+      .floor-6th {
+        position: absolute;
+        left: 430px;
+        right: 0;
+        top: 24rem;
+      }
+      button5 {
+        display: flex;
+        flex-direction: column;
+        background-color: #f7f2f0;
+        border-radius: 10px;
+        width: 90px;
+        height: 20px;
+      }
+      button5:hover {
+        background-color: #121111;
+        border-radius: 10px;
+        padding: 2px 10px;
+      }
+      button5 a {
+        color: rgb(61, 49, 49);
+      }
+      .view {
+        display: flex;
+        position: absolute;
+        left: 600px;
+        top: 213pc;
+      }
+      .view a {
+        color: aliceblue;
+        text-align: center;
+        width: 220px;
+        height: 15px;
+        border-radius: 100px;
+        padding: 20px;
+        background-color: rgb(188 125 107);
+      }
+      .view a:hover {
+        background-color: #e4dacb;
+      }
+      .moviee {
+        display: flex;
+        flex-direction: row;
+        height: 115vh;
+      }
+      .movie {
+        padding: 30px;
+      }
+      .movie img {
+        width: 240px;
+        border-radius: 10px;
+      }
+      .movie1 {
+        position: absolute;
+        top: 237pc;
+        left: 21pc;
+      }
+      .movie1 img {
+        width: 220px;
+        border-radius: 15px;
+      }
+      .movie2 {
+        position: absolute;
+        top: 237pc;
+        left: 38pc;
+      }
+      .movie2 img {
+        width: 225px;
+        border-radius: 15px;
+      }
+      .movie3{
+        position: absolute;
+        top: 237pc;
+        left: 56pc;
+      }
+      .movie3 img{
+        width: 220px;
+        border-radius: 15px;
+      }
+      .movie4{
+        position: absolute;
+        top: 237pc;
+        left: 74pc;
+      }
+      .movie4 img{
+        width: 220px;
+        border-radius: 15px;
+      }
+.logocinema{
+   position: absolute;
+   top: 225pc; 
+   left: 79pc;
+}
+.logocinema img{
+    width: 130px;
+   
+}
+      .cinematika {
+        padding: 50px;
+       
+      }
+      .cinematika h1 {
+        color: rgb(57, 55, 55);
+        font-size: 65px;
+        font-weight: 100;
+        font-family: "Open Sans", sans-serif;
+      }
+      .ploxiy-cinema {
+        padding: 8px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+      .ploxiy-cinema p {
+        color: gray;
+      }
+      .movieviewall{
+        display: flex;
+        position: absolute;
+        left:4pc ;
+        top:270pc ;
+      }
+      .movieviewall a{
+        color: rgb(35, 42, 49);
+        text-align: center;
+        width: 7cm;
+        height: 15px;
+        border-radius: 100px;
+        border: 1px solid rgb(188 125 107);
+        padding: 20px;
+        background-color: white;
+      }
+      .movieviewall a:hover{
+        background-color: rgb(188 125 107);
+      }
+      .home{
+        background-image: url(https://static.vecteezy.com/system/resources/previews/011/115/329/non_2x/abstract-modern-white-and-grey-gradient-color-diagonal-line-pattern-background-vector.jpg);
+        background-size: cover;
+        height: 150vh;
+        display:flex ;
+        flex-direction: row;
+       
+      }
+      .incomlex h1{
+        color: rgb(57, 55, 55);
+        font-size: 65px;
+        font-weight: 100;
+        font-family: "Open Sans", sans-serif;
+        padding: 100px 440px;
+      }
+      .decoration{
+        display:flex ;
+        flex-direction: row;
+        gap: 40px;
+      }
+      .decoration img{
+        width:500px;
+      }
+      .hotel{
+       
+      }
+      .hotel img{
+        width: 31%;
+      }
+      .hotel h1{
+color: #121111;
+padding: 20px;
+      }
+      .luxury{
+       
+      }
+      .luxury img{
+        width: 31%;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="contenir">
+          <div class="menu">
+            <a href="#">MENU</a>
+          </div>
+          <div class="rem">
+            <a href=""><img src="/tashken.city/icon-rem.svg" alt="" /></a>
+          </div>
+          <div class="time">
+            <a href=""><img src="/tashken.city/icon-time.svg" alt="" /></a>
+            <p>Today until 00:00</p>
+          </div>
+          <div class="tashkent">
+            <a href=""
+              ><img src="/tashken.city/icon-logotash.svg" width="90px" alt=""
+            /></a>
+          </div>
+          <div class="city">
+            <a href=""
+              ><img src="/tashken.city/icon-city.svg" width="80px" alt=""
+            /></a>
+          </div>
+          <div class="parking">
+            <a href=""
+              ><img src="/tashken.city/icon-parking.svg" width="20px" alt=""
+            /></a>
+            <p>Parking</p>
+          </div>
+
+          <div class="directions">
+            <a href=""><img src="/tashken.city/icon-location.svg" alt="" /></a>
+            <p>Directions</p>
+          </div>
+
+          <div class="pois">
+            <a href=""><img src="/tashken.city/icon-pois.svg" alt="" /></a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="/tashken.city/icon-hidden.svg" alt="" />
+          <a href="">ENG</a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="hero">
+        <video
+          src="https://tcmall.uz/strapi/uploads/promo_15_sec_2_video_converter_com_198a3d0724.mp4"
+          class="absolute left-0 top-0 h-full w-full object-cover"
+          autoplay=""
+          loop=""
+          playsinline=""
+        ></video>
+      </section>
+      <section class="card-box">
+        <div class="shop">
+          <a href=""
+            ><img
+              src="https://www.tcmall.uz/_next/static/media/card-category-1.de3c2433.png"
+              alt=""
+          /></a>
+          <h1>Shop</h1>
+        </div>
+
+        <div class="cafe">
+          <a href=""
+            ><img
+              src="https://www.tcmall.uz/_next/static/media/card-category-2.c304c08f.png"
+              alt=""
+          /></a>
+          <h1>Cafe and Restaurant</h1>
+        </div>
+        <div class="entertainmet">
+          <a href=""
+            ><img
+              src="https://www.tcmall.uz/_next/static/media/card-category-3.35b14d7f.png"
+              alt=""
+          /></a>
+          <h1>Entertainmet</h1>
+        </div>
+        <div class="services">
+          <a href=""
+            ><img
+              src="https://www.tcmall.uz/_next/static/media/card-category-4.2f524c44.png"
+              alt=""
+          /></a>
+          <h1>Services</h1>
+        </div>
+      </section>
+      <section class="news">
+        <h1>News</h1>
+        <img
+          src="https://www.tcmall.uz/_next/image?url=https%3A%2F%2Ftcmall.uz%2Fstrapi%2Fuploads%2Fweekends_with_family_cover_7115c04ba4.png&w=3840&q=75"
+          alt=""
+        />
+        <div class="data">
+          <h3>APRIL 24, 2024</h3>
+        </div>
+        <div class="title">
+          <h2>
+            Spending time with loved ones an invaluable resource of life and a
+            real family adventure
+          </h2>
+        </div>
+        <button><a href="">Read More</a></button>
+      </section>
+      <section class="profil">
+        <img
+          src="https://www.tcmall.uz/_next/image?url=https%3A%2F%2Ftcmall.uz%2Fstrapi%2Fuploads%2Flola_yuldasheva_cover_3_3ca36dd42b.png&w=3840&q=75"
+          alt=""
+        />
+        <div class="data2">
+          <h4>APRIL 29, 2024</h4>
+        </div>
+        <div class="title2">
+          <h2>
+            On April 17, Tashkent City Mall hosted the official presentation of
+            Lola Yuldasheva's new music video for the song "Sog'inch"
+          </h2>
+        </div>
+
+        <a href="">Read More</a>
+      </section>
+      <section class="profil-car">
+        <img
+          src="https://www.tcmall.uz/_next/image?url=https%3A%2F%2Ftcmall.uz%2Fstrapi%2Fuploads%2Fvip_motors_cover_41593f4051.png&w=3840&q=75"
+          alt=""
+        />
+        <div class="data3">
+          <h4>APRIL 29, 2024</h4>
+        </div>
+        <div class="title3">
+          <h2>
+            VIP Motors premium car showroom will open in Tashkent City Mall.
+          </h2>
+        </div>
+        <a href="">Read More</a>
+        <div class="button">
+          <button2><a href="">View all</a></button2>
+        </div>
+      </section>
+
+      <section class="cards">
+        <div class="consep">
+          <div class="adidas">
+            <img
+              src="https://www.tcmall.uz/_next/image?url=https%3A%2F%2Ftcmall.uz%2Fstrapi%2Fuploads%2FAdidas_logo_d31887b542.png&w=3840&q=75"
+              alt=""
+            />
+            <div class="string"><h1>ADIDAS</h1></div>
+            <p>Sportswear, Men's clothing, Women's clothing</p>
+          </div>
+        </div>
+        <div class="disecrepsion">
+          <button3><a href="">2-nd floor</a></button3>
+        </div>
+        <div class="map">
+          <a href="">View On Map</a>
+        </div>
+
+        <!---------------------->
+        <div class="tenat-card">
+          <div class="about">
+            <div class="stardivarius">
+              <img
+                src="https://www.tcmall.uz/_next/image?url=https%3A%2F%2Ftcmall.uz%2Fstrapi%2Fuploads%2FStradivarius_logo_svg_f40f1bf30e.png&w=3840&q=75"
+                alt=""
+              />
+              <div class="string"><h1>STRADIVARIUS</h1></div>
+              <p>Men's clothing, Women's clothing, Children's clothing</p>
+            </div>
+          </div>
+          <div class="else">
+            <button4><a href="">2-nd floor</a></button4>
+          </div>
+          <div class="map2">
+            <a href="">View On Map</a>
+          </div>
+        </div>
+        <!--------------------->
+        <div class="tenat-card">
+          <div class="about">
+            <div class="stardivarius">
+              <img
+                src="https://www.tcmall.uz/_next/image?url=https%3A%2F%2Ftcmall.uz%2Fstrapi%2Fuploads%2FMassimo_Dutti_Logo_f17a74c070.png&w=3840&q=75"
+                alt=""
+              />
+              <div class="string"><h1>MASSIMO DUTTI</h1></div>
+              <p>Men's clothing, Women's clothing, Children's clothing</p>
+            </div>
+          </div>
+          <div class="floor">
+            <button4><a href="">2-nd floor</a></button4>
+          </div>
+          <div class="map3">
+            <a href="">View On Map</a>
+          </div>
+        </div>
+
+        <div class="tenat-card">
+          <div class="about">
+            <div class="saber">
+              <img
+                src="https://www.tcmall.uz/_next/image?url=https%3A%2F%2Ftcmall.uz%2Fstrapi%2Fuploads%2FSABER_01_1_181e7db84c.png&w=3840&q=75"
+                alt=""
+              />
+              <div class="string"><h1>7SABER</h1></div>
+              <p>Sports goods, Sportswear, Accessories</p>
+            </div>
+          </div>
+          <div class="floor-st">
+            <button4><a href="">3-st floor</a></button4>
+          </div>
+          <div class="map4">
+            <a href="">View On Map</a>
+          </div>
+        </div>
+      </section>
+      <section class="order">
+        <div class="tenat-card">
+          <div class="about">
+            <div class="bershka">
+              <img
+                src="https://www.tcmall.uz/_next/image?url=https%3A%2F%2Ftcmall.uz%2Fstrapi%2Fuploads%2FBershka_Logo_wine_1_1_5c51b2d8a7.png&w=3840&q=75"
+                alt=""
+              />
+              <div class="string2"><h1>BERSHKA</h1></div>
+              <p>Women's clothing, Men's clothing, Shoes</p>
+            </div>
+          </div>
+          <div class="floor-nd">
+            <button5><a href="">2-nd floor</a></button5>
+          </div>
+          <div class="map5">
+            <a href="">View On Map</a>
+          </div>
+        </div>
+
+        <div class="tenat-card">
+          <div class="about">
+            <div class="bershka">
+              <img
+                src="https://www.tcmall.uz/_next/image?url=https%3A%2F%2Ftcmall.uz%2Fstrapi%2Fuploads%2F1024px_Zara_Logo_svg_Copy_Konul_Nasibova_b08423af60.png&w=2048&q=75"
+                alt=""
+              />
+              <div class="string2"><h1>ZARA</h1></div>
+              <p>Men's clothing, Women's clothing, Accessories</p>
+            </div>
+          </div>
+          <div class="floor-2nd">
+            <button5><a href="">2-nd floor</a></button5>
+          </div>
+          <div class="map6">
+            <a href="">View On Map</a>
+          </div>
+        </div>
+
+        <div class="tenat-card">
+          <div class="about">
+            <div class="bershka">
+              <img
+                src="https://www.tcmall.uz/_next/image?url=https%3A%2F%2Ftcmall.uz%2Fstrapi%2Fuploads%2FLogo_white_2_Galina_Kim_1_eab782d19b.png&w=3840&q=75"
+                alt=""
+              />
+              <div class="string2"><h1>SAFIA</h1></div>
+              <p>Cafes and restaurants, Cafes, Pastry shop</p>
+            </div>
+          </div>
+          <div class="floor-1st">
+            <button5><a href="">1-st floor</a></button5>
+          </div>
+          <div class="map7">
+            <a href="">View On Map</a>
+          </div>
+        </div>
+
+        <div class="tenat-card">
+          <div class="about">
+            <div class="bershka1">
+              <img
+                src="https://www.tcmall.uz/_next/image?url=https%3A%2F%2Ftcmall.uz%2Fstrapi%2Fuploads%2FBEFIT_SKY_logo_1_277230fc2f.png&w=3840&q=75"
+                alt=""
+              />
+              <div class="string2"><h1>BEFIT</h1></div>
+              <p>Services</p>
+            </div>
+          </div>
+          <div class="floor-4th">
+            <button5><a href="">4-th floor</a></button5>
+          </div>
+          <div class="map8">
+            <a href="">View On Map</a>
+          </div>
+        </div>
+      </section>
+      <section class="cinema">
+        <div class="tenat-card">
+          <div class="about">
+            <div class="cinema1">
+              <img
+                src="https://www.tcmall.uz/_next/image?url=https%3A%2F%2Ftcmall.uz%2Fstrapi%2Fuploads%2Fcinematica_UZ_LOGO_Kamila_Turaeva_6229d3bcb1.png&w=3840&q=75"
+                alt=""
+              />
+              <div class="string2"><h1>CINEMATICA</h1></div>
+              <p>Cinema</p>
+            </div>
+          </div>
+          <div class="floor-5th">
+            <button5><a href="">4-th floor</a></button5>
+          </div>
+          <div class="map9">
+            <a href="">View On Map</a>
+          </div>
+        </div>
+
+        <div class="tenat-card">
+          <div class="about">
+            <div class="cinema1">
+              <img
+                src="https://www.tcmall.uz/_next/image?url=https%3A%2F%2Ftcmall.uz%2Fstrapi%2Fuploads%2FSky_Park_LOGO_Artel_Company_4ce0e19834.png&w=3840&q=75"
+                alt=""
+              />
+              <div class="string2"><h1>SKY PARK</h1></div>
+              <p>Entertainment park, Cinema</p>
+            </div>
+          </div>
+          <div class="floor-6th">
+            <button5><a href="">4-th floor</a></button5>
+          </div>
+          <div class="map10">
+            <a href="">View On Map</a>
+          </div>
+        </div>
+      </section>
+      <section class="view">
+        <a href="">View all</a>
+      </section>
+      <!---------------------->
+      <section class="moviee">
+        <div class="movie">
+            
+          <div class="cinematika">
+            <h1>Cinema</h1>
+            <div class="logocinema">
+                <img src="https://zor.store/images/detailed/75/cinematica.png" alt="">
+                            </div>
+            <img src="/tashken.city/logo.svg" alt="" />
+          </div>
+          <img
+            src="https://www.tcmall.uz/_next/image?url=https%3A%2F%2Fcinematica.uz%2Fuploads%2Fmovies%2F60f3bc4b-7b8f-4398-a1e7-ae990edd7f22.jpg&w=640&q=75"
+            alt=""
+          />
+          <div class="ploxiy-cinema">
+            <h3>Плохие парни до конца</h3>
+            <p>Адиль Эль Арби, Билал Фалла 12+</p>
+          </div>
+        </div>
+        <div class="movie1">
+          <img
+            src="https://www.tcmall.uz/_next/image?url=https%3A%2F%2Fcinematica.uz%2Fuploads%2Fmovies%2F98af4991-69cf-49ad-9cbb-f306d1cf261f.jpg&w=640&q=75"
+            alt=""
+          />
+          <div class="ploxiy-cinema">
+            <h3>Bahodir Yalanto'sh</h3>
+          </div>
+        </div>
+        <div class="movie2">
+          <img
+            src="https://www.tcmall.uz/_next/image?url=https%3A%2F%2Fcinematica.uz%2Fuploads%2Fmovies%2Fc9f424a5-d1a5-451b-9c7f-e962bf8195c6.jpg&w=640&q=75"
+            alt=""
+          />
+          <div class="ploxiy-cinema">
+            <h3>JANNAT</h3>
+            <p>Руслан Акун 16+</p>
+          </div>
+        </div>
+
+        <div class="movie3">
+          <img src="https://www.tcmall.uz/_next/image?url=https%3A%2F%2Fcinematica.uz%2Fuploads%2Fmovies%2F2b80330f-c056-47ab-b2b6-ee60a9597411.jpg&w=640&q=75" alt="" />
+          <div class="ploxiy-cinema">
+            <h3>Асфальтовые джунгли</h3>
+            <p>Жан-Стефан Совер</p>
+          </div>
+        </div>
+
+        <div class="movie4">
+            <img src="https://www.tcmall.uz/_next/image?url=https%3A%2F%2Fcinematica.uz%2Fuploads%2Fmovies%2F85e7faff-2109-4ab9-9a0e-afa468e122d9.jpg&w=640&q=75" alt="" />
+            <div class="ploxiy-cinema">
+              <h3>Последний дракон</h3>
+              <p> Ли Цзяньпин Сальвадор Симо 3+</p>
+            </div>
+          </div>
+          <div class="movieviewall">
+            <a href="">View All</a>
+          </div>
+      </section>
+      
+<div class="incomlex">
+    <h1>In Complex</h1>
+</div>
+<section class="home">
+<div class="decoration">
+<img src="https://www.tcmall.uz/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Ffeatures-main-1-hover.875d1fec.png&w=1920&q=75"  alt="">
+<h1>
+    BUSINESS CENTER
+    SUMMIT
+    </h1>
+</div>
+<div class="hotel">
+    <img src="https://www.tcmall.uz/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Ffeatures-main-2.dc73b93c.png&w=1920&q=75"  alt="">
+<h1>
+    LUXURY HOTEL</h1>
+</div>
+<div class="luxury">
+    <img src="https://www.tcmall.uz/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Ffeatures-main-3.37427839.png&w=1920&q=75"  alt="">
+    <h1>LUXURY APPARTMENTS</h1>
+</div>
+      </section>
+    </main>
+  </body>
+</html>
