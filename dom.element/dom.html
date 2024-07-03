@@ -7,18 +7,46 @@
 </head>
 <style>
     img{
-        width: 500px;
+        width: 800px;
     }
     body{
       background-image: url(https://play.tailwindcss.com/img/beams.jpg);
+      text-align: center;
+    }
+    button{
+        background-size: cover;
+        background-repeat: center;
+        background-position: center;
+        width: 50px;
+        height: 50px;
+        border: none;
+        background-color: transparent;
+    }
+    .bmw{
+        background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/BMW.svg/640px-BMW.svg.png);
+    }
+    .audi{
+        background-image: url(https://static.wixstatic.com/media/f2bf43_bff1fc05f474454bb06057ec34288f80~mv2_d_1470_1470_s_2.png/v1/fill/w_1470,h_1470,al_c/f2bf43_bff1fc05f474454bb06057ec34288f80~mv2_d_1470_1470_s_2.png);
+    }
+    .tesla{
+        background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Tesla_Motors.svg/1587px-Tesla_Motors.svg.png);
+    }
+    .worker{
+        background-image: url(https://static.vecteezy.com/system/resources/previews/012/001/949/non_2x/hummer-for-construction-tool-png.png);
+    }
+    .buttons{
+        display: flex;
+        justify-content: space-around;
+        margin: 20px;
     }
 </style>
 <body>
-<button onclick="bmw()">BMW</button>
-<button onclick="audi()">AUDI</button>
-<button onclick="tesla()">TESLA</button>
-<button onclick="worker()">WORKER</button>
-
+    <div class="buttons">
+<button class="bmw" onclick="bmw()"></button>
+<button class="audi" onclick="audi()"></button>
+<button class="tesla" onclick="tesla()"></button>
+<button class="worker" onclick="worker()"></button>
+</div>
 <h1>title</h1>
 <p>Paragraph</p>
 <div class="contact">
@@ -33,10 +61,10 @@ const div = document.getElementsByClassName('contact');
 const p2 = document.querySelector('.contact p')
 const img = document.querySelector('img')
 
-h1.innerHTML = 'BMW';
+h1.innerHTML = 'CARS';
 p.innerHTML = 'Lorem ipsum dollor ait amount'
-p2.innerHTML = 'nature'
-img.src = 'https://img.freepik.com/free-photo/wide-angle-shot-single-tree-growing-clouded-sky-during-sunset-surrounded-by-grass_181624-22807.jpg'
+p2.innerHTML = 'cars'
+img.src = 'https://www.mercedes-benz.co.id/media/jleplqth/cla-200-amg-line_available-models_554-x-369.png'
 
 // if(h1.innerHTML ==='BMW'){
 //     img.src = 'https://www.bmw-m.com/content/dam/bmw/marketBMW_M/www_bmw-m_com/all-models/model-navigation/bmw-m850i-xdrive-cabrio-flyout-neu.png'
