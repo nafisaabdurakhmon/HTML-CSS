@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    img{
+        width: 500px;
+    }
+    body{
+      background-image: url(https://play.tailwindcss.com/img/beams.jpg);
+    }
+</style>
+<body>
+<button onclick="bmw()">BMW</button>
+<button onclick="audi()">AUDI</button>
+<button onclick="tesla()">TESLA</button>
+<button onclick="worker()">WORKER</button>
+
+<h1>title</h1>
+<p>Paragraph</p>
+<div class="contact">
+<p>paragraph2</p>
+</div>
+<img src="" alt="">
+
+    <script>
+const h1 = document.querySelector('h1');
+const p = document.querySelector('p');
+const div = document.getElementsByClassName('contact');
+const p2 = document.querySelector('.contact p')
+const img = document.querySelector('img')
+
+h1.innerHTML = 'BMW';
+p.innerHTML = 'Lorem ipsum dollor ait amount'
+p2.innerHTML = 'nature'
+img.src = 'https://img.freepik.com/free-photo/wide-angle-shot-single-tree-growing-clouded-sky-during-sunset-surrounded-by-grass_181624-22807.jpg'
+
+// if(h1.innerHTML ==='BMW'){
+//     img.src = 'https://www.bmw-m.com/content/dam/bmw/marketBMW_M/www_bmw-m_com/all-models/model-navigation/bmw-m850i-xdrive-cabrio-flyout-neu.png'
+// }
+// else if( h1.innerHTML === 'AUDI'){
+//     img.src = 'https://mediaservice.audi.com/media/cdb/data/487a4199-3aa9-46e0-9207-589566107743.jpg'
+// }
+// else if( h1.innerHTML === 'TESLA'){
+//     img.src = 'https://hips.hearstapps.com/hmg-prod/amv-prod-cad-assets/wp-content/uploads/2017/11/Tesla-Roadster-103.jpg?crop=0.780xw:0.950xh;0.141xw,0.0497xh&resize=768:*'
+// }
+// else {
+//     p2.innerHTML = 'you need to work'
+// }
+
+function bmw(){
+    img.src = 'https://www.bmw-m.com/content/dam/bmw/marketBMW_M/www_bmw-m_com/all-models/model-navigation/bmw-m850i-xdrive-cabrio-flyout-neu.png'
+}
+function audi(){
+    img.src =  'https://mediaservice.audi.com/media/cdb/data/487a4199-3aa9-46e0-9207-589566107743.jpg'
+}
+function tesla(){
+    img.src = 'https://www.greenncap.com/wp-content/uploads/tesla-model-3-2022-0099.png'
+}
+function worker(){
+    img.src = 'https://cdn-icons-png.flaticon.com/512/4413/4413098.png'
+}
+    </script>
+
+</body>
+</html

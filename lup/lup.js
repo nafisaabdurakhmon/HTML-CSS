@@ -16,11 +16,11 @@ for( let i = 0; i < list.length; i++){
 console.log(total)*/
 
 
-let names = [ 'Jonh','Done','Mike','Jonh','Mike','Doe','Done','Mike']
+/*let names = [ 'Jonh','Done','Mike','Jonh','Mike','Doe','Done','Mike']
 let count = 0;
 for(let i = 0; i < names.length; i++){
     if(names [i] === 'Mike'){
         count++
     }
 }
-console.log(count)
+console.log(count)*/
