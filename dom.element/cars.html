@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+    section {
+      height: 100vh;
+      background-image: url(https://www.shutterstock.com/image-photo/concrete-floor-smoke-background-600nw-1696591468.jpg);
+      background-size: cover;
+      display: flex;
+      justify-content: end;
+      align-items: center;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: transparent;
+      height: 10vh;
+      position: absolute;
+      left: 0;
+      right: 0;
+    }
+    nav {
+      display: flex;
+      gap: 10px;
+    }
+    button {
+      background-color: white;
+      color: black;
+      border: none;
+      width: 100px;
+      padding: 10px;
+      border-radius: 15px;
+    }
+    button:hover {
+      background-color: rgb(1, 1, 1);
+      color: white;
+    }
+    h1{
+        color: white;
+    }
+  </style>
+  <body>
+    <header>
+      <nav>
+        <button onclick="mercedes()">Mercedes</button>
+        <button onclick="BMW()">BMW</button>
+        <button onclick="Ferrari()">Ferrari</button>
+        <button onclick="Ford()">Ford</button>
+      </nav>
+    </header>
+    <section>
+      <img
+        width="100px"
+        class="car-logo"
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Mercedes-Logo.svg/2048px-Mercedes-Logo.svg.png"
+        alt=""
+      />
+      <h1 class="car-title">mercedes-benz AMG</h1>
+      <img
+        width="60%"
+        class="car"
+        src="https://image-server.autospot.ru/images/1/0/2/2/6/4/6475093/origin/6475093.png"
+        alt=""
+      />
+    </section>
+    <script>
+              const carlogo = document.querySelector('.car-logo')
+              const cartitle = document.querySelector('.car-title')
+              const car = document.querySelector('.car')
+
+
+              function mercedes(){
+                  carlogo.src = 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Mercedes-Logo.svg/2048px-Mercedes-Logo.svg.png'
+                  cartitle.innerHTML = 'Mercedes-benz AMG'
+                  car.src = 'https://dreamcars.by/upload/iblock/d2d/d2daf815288343c572b41ef8c3e0bf86.png'
+              }
+
+              function BMW(){
+      carlogo.src ='https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/BMW.svg/768px-BMW.svg.png'
+      cartitle.innerHTML = 'All BMW Models & Pricing'
+      car.src = 'https://cache.bmwusa.com/cosy.arox?pov=walkaround&brand=WBBM&vehicle=258D&client=byo&paint=P0475&fabric=FVASW&sa=S01P0,S0302,S0316,S0319,S0322,S03AG,S03DZ,S04FM,S04HB,S04L8,S05AC,S05AZ,S06AC,S06AK,S06C4,S06NW,S06U3,S06WD,S0710,S0715,S0760&quality=70&bkgnd=transparent&resp=png&angle=60'
+              }
+              function Ferrari (){
+      carlogo.src ='https://i.pinimg.com/originals/a9/4b/ab/a94babe6ef4cbfcd377ea6f1c0817730.png'
+      cartitle.innerHTML = 'ferrari current models prices'
+      car.src = 'https://static.tildacdn.com/tild3062-3437-4433-a232-313630346462/488.png'
+              }
+              function Ford(){
+      carlogo.src ='https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Ford_logo_flat.svg/2560px-Ford_logo_flat.svg.png'
+      cartitle.innerHTML = 'Ford Cars - Browse the Range Here'
+      car.src = 'https://www.gpas-cache.ford.com/guid/024d8e01-a0f9-351f-8288-750a6ff4f5a2.png'
+              }
+    </script>
+  </body>
+</html>
