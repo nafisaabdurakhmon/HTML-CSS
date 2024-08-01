@@ -78,9 +78,10 @@ gap: 10px;
         border: 1px solid #eee7e7;
         border-radius: 5px;
       }
-      input{
-      padding: 10px;
-      border: 1px solid grey;
+      input[type= "number"]{
+      padding: 12px;
+      border: none;
+      width: 100%;
       border-radius: 5px;
       }
 button{
@@ -128,7 +129,13 @@ border-bottom-left-radius: 50px;
         top: 35px;
         left:40px;
       }
-     
+     .input-icon{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border:1px solid #ccc ;
+        border-radius:5px ;
+     }
     </style>
   </head>
   <body>
@@ -143,8 +150,11 @@ border-bottom-left-radius: 50px;
           <span class="material-symbols-outlined" style="background-color: hsl(202, 86%, 94%) ; width: 25px;"> currency_pound </span>
           <p> <span style="color:hsl(200, 26%, 54%); ;">Mortgage amount</span> </p>
           <label for="amount"></label>
+          <div class="input-icon">
+            <h5>£</h5>
           <input type="number" id="amount" value="300.000" />
         </div>
+    </div>
         <div class="group2">
           <div class="input-group">
             <p><span style="color:hsl(200, 26%, 54%);">Mortgage Term</span></p>
