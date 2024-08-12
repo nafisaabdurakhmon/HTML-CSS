@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | IP Address Tracker</title>
+
+ 
+  <style>
+   @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+   *{
+    margin: 0;
+    padding: 0;
+   }
+   body{
+    font-family: "Rubik", sans-serif;
+   }
+   header{
+    background-image: url(https://st2.depositphotos.com/1084193/7891/v/450/depositphotos_78918848-stock-illustration-abstract-tech-background-futuristic-technology.jpg);
+    background-size: cover;
+    height: 300px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+   }
+   .body{
+    display: flex;
+    gap: 3rem;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 20px;
+   }
+   input[type='text']{
+    padding: 10px;
+    width: 300px;
+    border: 1px solid rgb(140,141,145);
+    border-radius: 4px 0 0 4px;
+    
+   }
+   button{
+    padding: 10px;
+    border: none;
+    background-color: black;
+    border-radius:0 4px 4px 0 ;
+    color: white ;
+   }
+  </style>
+</head>
+<body>
+  <header>
+  <h1>IP Address Tracker</h1>
+  <div class="search">
+  <input type="text" id="ipInput" placeholder="Search for any IP address or domain">
+  <button onclick="fetchIP()" id="searchBtn">Search</button>
+</div>
+<div class="body">
+<div>
+<p> IP Address</p>
+<h2 id="ipAddress">-</h2>
+</div>
+<div>
+  <p>Location</p>
+  <h3 id="location">-</h3>
+</div>
+  <div>
+    <p>  Timezone</p>
+  <h3 id="timezone">-</h3>
+
+  </div>
+<div>
+  <p>ISP</p>
+  <h3 id="isp">-
+  </h3>
+</div>
+</div>
+</header>
+<div class="maps">
+
+</div>
+
+
+
+  
+
+  
+
+<script>
+//const apikey = 'at_ZB2qwTffO70X2WxVLTM5zPEzkKWE3';
+      //const apiUrl = `https://geo.ipify.org/api/v2/country,city?apiKey=${apiKey}`
+
+
+
+const ipAddressElement = document.getElementById('ipAddress')
+const locationElement = document.getElementById('location')
+const timezonElement = document.getElementById('timezone')
+const ispElement = document.getElementById('isp')
+const searchBtn = document.getElementById('searchBtn')
+const ipInput = document.getElementById('ipInput').value;
+
+function fetchIP() {
+      const ip = document.getElementById("ipInput").value.trim();
+      console.log(ip);
+      fetch(`https://geo.ipify.org/api/v2/country,city?apiKey=at_ZB2qwTffO70X2WxVLTM5zPEzkKWE3&ipAddress=${ip}`)
+      .then(respons => respons.json())
+      .then(data => {
+        console.log(data);
+        ipAddressElement.textContent = data.ip;
+        locationElement.textContent = data.location.city;
+        timezonElement.textContent = data.location.timezone;
+        ispElement.textContent = data.isp;
+      }) 
+     }
+
+
+
+
+</script>
+</body>
+</html>
