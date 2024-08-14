@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Contact form</title>
+
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font-family: "Karla", sans-serif;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: hsl(148, 38%, 91%);
+      }
+      .container {
+        display: flex;
+        justify-content: center;
+        background-color: hsl(0, 0%, 100%);
+        padding: 2rem;
+        border-radius: 8px;
+        margin: auto;
+        width: 35%;
+      }
+      .container > div {
+        flex: 1;
+      }
+      .contact {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+      }
+      .group2 {
+        display: flex;
+        gap: 1rem;
+      }
+      .email {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        
+      }
+
+      .input {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        flex: 1;
+      }
+      .input-group {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+
+      .radio-inputs {
+        display: flex;
+        gap: 1rem;
+        
+      }
+      .radio-group {
+        display: flex;
+        gap: 1rem;
+        flex: 1;
+        padding: 10px;
+        border: 1px solid hsl(186, 15%, 59%);
+        border-radius: 10px;
+
+      }
+
+      .checkbox-group {
+        display: flex;
+        gap: 1rem;
+      }
+
+      input {
+               padding: 10px;
+        border: 1px solid black;
+        border-radius: 10px;
+        border: 1px solid  hsl(186, 15%, 59%);
+      }
+
+      .message {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        
+      }
+      button{
+        background-color:  hsl(169, 82%, 27%);
+        border-radius: 5px;
+        padding: 10px;
+        border: 1px solid  hsl(169, 82%, 27%);
+      }
+      button:hover{
+        background-color: hsl(187, 24%, 22%) ;
+      }
+      label{
+        color: hsl(189, 5%, 53%) ;
+      }
+      textarea{
+        border: 1px solid  hsl(186, 15%, 59%);
+      }
+      
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="contact">
+        <div class="title">
+          <h1><span style="color: hsl(187, 24%, 22%);">Contact Us</span></h1>
+        </div>
+        <!--------------->
+        <div class="group2">
+          <div class="input">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="fname"/>
+          </div>
+          <div class="input">
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lname" />
+          </div>
+        </div>
+        <!--------------------->
+        <div class="email">
+          <label for="  Email Address"> Email Address</label>
+          <input type="text" />
+        </div>
+        <!------------------>
+        <div class="input-group">
+          <label for="Query Type">Query Type</label>
+          <div class="radio-inputs">
+            <div class="radio-group">
+              <input
+                type="radio"
+                name="enquiry"
+                placeholder="General Enquiry"
+              />
+              <label for="enquiry">General Enquiry</label>
+            </div>
+            <div class="radio-group">
+              <input
+                type="radio"
+                name="request"
+                placeholder="Support Request"
+              />
+              <label for="request">Support Request</label>
+            </div>
+          </div>
+        </div>
+        <div class="message">
+          <label for="message"> Message</label>
+          <textarea name="message" id="message" cols="30" rows="10"></textarea>
+        </div>
+        <div class="chechbox-group">
+          <input
+            type="checkbox"
+            name="consent"
+            placeholder="Support Request"
+          />
+          <label for="consent">I consent to being contacted by the team</label>
+        </div>
+        <button><span style="color: hsl(190, 26%, 72%);">Submit</span> </button>
+      </div>
+    </div>
+
+   
+  </body>
+</html>
