@@ -1,302 +1,298 @@
-*{  padding: 0;
-    margin: 0;}
+* {
+  padding: 0;
+  margin: 0;
+}
 .container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
 }
 
-.box{
-    height: 200px;
-    width: 45%;
-    background-color: burlywood;
-    background-size: cover;
-    background-position: center;
-    animation: colorAnimation;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
-
+.box {
+  height: 200px;
+  width: 45%;
+  background-color: burlywood;
+  background-size: cover;
+  background-position: center;
+  animation: colorAnimation;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
 }
-.box2{
-    height: 200px;
-    width: 45%;
-    background-color: burlywood;
-    background-size: cover;
-    background-position: center;
-    animation: colorAnimation2;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;   
+.box2 {
+  height: 200px;
+  width: 45%;
+  background-color: burlywood;
+  background-size: cover;
+  background-position: center;
+  animation: colorAnimation2;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
 }
-.box3{
-    height: 200px;
-    width: 45%;
-    background-color: burlywood;
-    background-size: cover;
-    background-position: center;
-    animation: colorAnimation3;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;}
-
-    .box4{
-        height: 200px;
-        width: 45%;
-        background-color: burlywood;
-        background-size: cover;
-        background-position: center;
-        animation: colorAnimation4;
-        animation-duration: 4s;
-        animation-iteration-count: infinite;   }
-
-@keyframes colorAnimation{
-    from{
-        background-image: url("https://api.lesailes.uz/storage/products/2022/02/16/HVtdHyIp8meqx2Hv35J8zPbYeQjshbRnT3NqhsKk.webp");
-    }
-    to{
-background-image: url("https://api.lesailes.uz/storage/products/2022/02/16/api76fbHhq2IJse17cRXst3pOzWfEgJk1cr0N2vM.webp");
-    }
+.box3 {
+  height: 200px;
+  width: 45%;
+  background-color: burlywood;
+  background-size: cover;
+  background-position: center;
+  animation: colorAnimation3;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
 }
 
-@keyframes colorAnimation2{
-    from{
-        background-image: url("https://api.lesailes.uz/storage/products/2022/02/23/pOFudHsA8LfVZldlFcgOUSXiXrrbkeSwMQLi5tPQ.webp");
-    }
-    to{
-background-image:url("https://api.lesailes.uz/storage/products/2022/04/25/sJsfijBgVVVtyo3Cv7kjWyp737OA2cLES7Rv0OoA.png")
-    }
+.box4 {
+  height: 200px;
+  width: 45%;
+  background-color: burlywood;
+  background-size: cover;
+  background-position: center;
+  animation: colorAnimation4;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
 }
-@keyframes colorAnimation3{
-    from{
-        background-image: url("https://api.lesailes.uz/storage/products/2022/09/16/Wk3t8tZXrl6UCQriUzFiDYXtCuUl7a44fNvDZ2wC.webp");
-    }
-    to{
-background-image:url("https://api.lesailes.uz/storage/products/2022/04/25/MoqsBqidWmweyoWn8qkzEwUrAENHNDuWAccXlKI6.png")
-    }
-}
-@keyframes colorAnimation4{
-    from{
-        background-image: url("https://api.lesailes.uz/storage/products/2022/06/15/U8v7GsJt5Nahm0L4Vna0u7HEeRc8U9PnU6R6j6TV.png");
-    }
-    to{
-background-image: url("https://api.lesailes.uz/storage/products/2022/06/15/eGsfAo0P5E7gh8aRB0vHPXX2JTKjAFasnhiBO777.png");
-    }
-   
-}
-h1{
-    animation: text;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
-    text-align: center;
-    font-size: 50px;
-}
-@keyframes text{
-    from{
-        color: rgb(219, 127, 255);
-    }
-    to{
-        color:yellow ;
-    }
 
-    }
-   
-
- .card{
-        width:300px;
-        border:1px solid rgb(234, 21, 43) ;
-        background-color: rgb(255, 255, 255);
-        color: rgb(0, 10, 10);
-    
-        
-        
-    }
-
-.card-content{
-            padding: 30px;
-        
+@keyframes colorAnimation {
+  from {
+    background-image: url("https://api.lesailes.uz/storage/products/2022/02/16/HVtdHyIp8meqx2Hv35J8zPbYeQjshbRnT3NqhsKk.webp");
+  }
+  to {
+    background-image: url("https://api.lesailes.uz/storage/products/2022/02/16/api76fbHhq2IJse17cRXst3pOzWfEgJk1cr0N2vM.webp");
+  }
 }
-.card-button{
-    padding: 10px 50px;
-    background-color: #fffcfc;
-    color: rgb(255, 0, 0);
-    border: 2px solid rgba(205, 19, 19, 0.986);
-    border-radius: 20px;
-    
-}
-.card-button:hover{
-    background-color: rgb(144, 206, 237);
-}
-.box-card{
-    display: flex;
-    gap: 20px;
 
+@keyframes colorAnimation2 {
+  from {
+    background-image: url("https://api.lesailes.uz/storage/products/2022/02/23/pOFudHsA8LfVZldlFcgOUSXiXrrbkeSwMQLi5tPQ.webp");
+  }
+  to {
+    background-image: url("https://api.lesailes.uz/storage/products/2022/04/25/sJsfijBgVVVtyo3Cv7kjWyp737OA2cLES7Rv0OoA.png");
+  }
+}
+@keyframes colorAnimation3 {
+  from {
+    background-image: url("https://api.lesailes.uz/storage/products/2022/09/16/Wk3t8tZXrl6UCQriUzFiDYXtCuUl7a44fNvDZ2wC.webp");
+  }
+  to {
+    background-image: url("https://api.lesailes.uz/storage/products/2022/04/25/MoqsBqidWmweyoWn8qkzEwUrAENHNDuWAccXlKI6.png");
+  }
+}
+@keyframes colorAnimation4 {
+  from {
+    background-image: url("https://api.lesailes.uz/storage/products/2022/06/15/U8v7GsJt5Nahm0L4Vna0u7HEeRc8U9PnU6R6j6TV.png");
+  }
+  to {
+    background-image: url("https://api.lesailes.uz/storage/products/2022/06/15/eGsfAo0P5E7gh8aRB0vHPXX2JTKjAFasnhiBO777.png");
+  }
+}
+h1 {
+  animation: text;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  text-align: center;
+  font-size: 50px;
+}
+@keyframes text {
+  from {
+    color: rgb(219, 127, 255);
+  }
+  to {
+    color: yellow;
+  }
+}
 
+.card {
+  width: 300px;
+  border: 1px solid rgb(234, 21, 43);
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 10, 10);
+}
+
+.card-content {
+  padding: 30px;
+}
+.card-button {
+  padding: 10px 50px;
+  background-color: #fffcfc;
+  color: rgb(255, 0, 0);
+  border: 2px solid rgba(205, 19, 19, 0.986);
+  border-radius: 20px;
+}
+.card-button:hover {
+  background-color: rgb(144, 206, 237);
+}
+.box-card {
+  display: flex;
+  gap: 20px;
 }
 
 .cards {
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-    
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
-ul{
-    list-style-type: none;
-    background-color: rgb(249, 229, 117);
-    height: 40px}
-
-li{
-        float: left;
-     }
-li a{
-        display:block;
-        font-size: 20px;
-        padding: 10px;
-        text-decoration: none;
-        color: rgb(24, 22, 22);
-    
-     }
-     li a:hover {
-        background-color: rgb(239, 34, 34);
-        border-radius: 50px;
-     } 
-     nav{
-        padding: 20px;
-        height: 100%;
-     }
-.hero{
-        background-image:url(https://thumbs.dreamstime.com/b/vector-logo-fast-food-dark-signboard-american-cafe-illustration-roasted-chicken-pieces-cardboard-bucket-pommes-227416922.jpg) ;
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 130vh;
-        display: flex;}
-
-.hero-contect{
-            width: 100px;
-            text-align: center;
-            color: aqua;}
-.logo{
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                height: 100%;
-            }            
-
-          section h1{ padding: 10px;
-                border:4px solid rgb(176, 226, 245);
-                border-radius: 20px;
-                background-image: url(https://lisbonne.net/wp-content/uploads/2016/04/gastronomie_lisbonne_portugal_2.jpg);
-                background-size: contain;
-                background-position: left;
-                background-repeat: no-repeat;
-                text-align: center;}
-
-                footer{
-                    background-color:rgb(249, 229, 117);
-                    height: 200px;
-                    color: black;
-                    padding: 40px;
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: center;
-                   
-                }
-
-.content{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 25px;
-    
+ul {
+  list-style-type: none;
+  background-color: rgb(249, 229, 117);
+  height: 40px;
 }
 
- .sushi1{
-                    height: 200px;
-                    width: 45%;
-                    background-color:silver ;
-                    background-size: cover;
-                    background-position: center;
-                    animation: colorAnimation5;
-                    animation-duration: 4s;
-                    animation-iteration-count: infinite;}
-                    
-                    .sushi2{
-                        height: 200px;
-                        width: 45%;
-                        background-color:silver;
-                        background-size: cover;
-                        background-position: center;
-                        animation: colorAnimation6;
-                        animation-duration: 4s;
-                        animation-iteration-count: infinite;}
-                    
-                        .sushi3{
-                            height: 200px;
-                            width: 45%;
-                            background-color:silver;
-                            background-size: cover;
-                            background-position: center;
-                            animation: colorAnimation7;
-                            animation-duration: 4s;
-                            animation-iteration-count: infinite;}
-                    
-                            .sushi4{
-                                height: 200px;
-                                width: 45%;
-                                background-color: silver;
-                                background-size: cover;
-                                background-position: center;
-                                animation: colorAnimation8;
-                                animation-duration: 4s;
-                                animation-iteration-count: infinite;}
-                    
-                                @keyframes colorAnimation5{
-                                    from{
-                                        background-image: url("https://yaponamama.uz/_next/image?url=https%3A%2F%2Fcdn.delever.uz%2Fdelever%2F1f966356-5a8e-4aac-82f7-aa9d10dfb515&w=3840&q=75");
-                                    }
-                                    to{
-                                background-image: url("https://yaponamama.uz/_next/image?url=https%3A%2F%2Fcdn.delever.uz%2Fdelever%2Fd434164e-de17-4760-aa1d-f39315f22338&w=3840&q=75");
-                                }   
-                            }           
-                        
-                                @keyframes colorAnimation6{
-                                    from{
-                                        background-image: url("https://yaponamama.uz/_next/image?url=https%3A%2F%2Fcdn.delever.uz%2Fdelever%2F40b92478-81a1-442c-861f-7e093d2f3603&w=3840&q=75");
-                                    }
-                                    to{
-                                background-image: url("https://yaponamama.uz/_next/image?url=https%3A%2F%2Fcdn.delever.uz%2Fdelever%2F1a978a3d-3a4b-4555-b4b9-b7ec1c3766ee&w=3840&q=75");
-                                    }
-                                }               
-                       
+li {
+  float: left;
+}
+li a {
+  display: block;
+  font-size: 20px;
+  padding: 10px;
+  text-decoration: none;
+  color: rgb(24, 22, 22);
+}
+li a:hover {
+  background-color: rgb(239, 34, 34);
+  border-radius: 50px;
+}
+nav {
+  padding: 20px;
+  height: 100%;
+}
+.hero {
+  background-image: url(https://thumbs.dreamstime.com/b/vector-logo-fast-food-dark-signboard-american-cafe-illustration-roasted-chicken-pieces-cardboard-bucket-pommes-227416922.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 130vh;
+  display: flex;
+}
 
-                    @keyframes colorAnimation7{
-                        from{
-                            background-image: url("https://yaponamama.uz/_next/image?url=https%3A%2F%2Fcdn.delever.uz%2Fdelever%2Ffa1d3e56-e6ba-4cf3-9421-aeb99e7c4135&w=3840&q=75");
-                        }
-                        to{
-                    background-image: url("https://yaponamama.uz/_next/image?url=https%3A%2F%2Fcdn.delever.uz%2Fdelever%2Fad84858b-4a42-4dac-984f-de78c541e165&w=3840&q=75");
-                        }
-                    }               
-                    @keyframes colorAnimation8{
-                        from{
-                            background-image: url("https://yaponamama.uz/_next/image?url=https%3A%2F%2Fcdn.delever.uz%2Fdelever%2Fcba98ed7-1ce8-4a35-92c8-289f1f700a9b&w=3840&q=75");
-                        }
-                        to{
-                    background-image: url("https://yaponamama.uz/_next/image?url=https%3A%2F%2Fcdn.delever.uz%2Fdelever%2Fbbd367c3-dfde-46c7-bc2b-6f8b0402a2e8&w=3840&q=75");
-                        }
-                    }               
+.hero-contect {
+  width: 100px;
+  text-align: center;
+  color: aqua;
+}
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
 
+section h1 {
+  padding: 10px;
+  border: 4px solid rgb(176, 226, 245);
+  border-radius: 20px;
+  background-image: url(https://lisbonne.net/wp-content/uploads/2016/04/gastronomie_lisbonne_portugal_2.jpg);
+  background-size: contain;
+  background-position: left;
+  background-repeat: no-repeat;
+  text-align: center;
+}
 
-                    table{
-                        width: 100%;
-                        text-align: center;
-                        border-radius: 15px;
-                        border: 10px solid rgb(209, 183, 122);
-                    background-image: url(https://i.pinimg.com/474x/c0/34/81/c03481b4e9d96164a3c211a56130342b.jpg);
-                   background-size: cover; 
-                                 
-                    }
-                    th, td {
-                        border-bottom: 1px solid rgba(128, 128, 128, 0.273);
-                        padding: 10px;
-                        color: rgb(4, 24, 76);
-                    }
+footer {
+  background-color: rgb(249, 229, 117);
+  height: 200px;
+  color: black;
+  padding: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.sushi1 {
+  height: 200px;
+  width: 45%;
+  background-color: silver;
+  background-size: cover;
+  background-position: center;
+  animation: colorAnimation5;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+.sushi2 {
+  height: 200px;
+  width: 45%;
+  background-color: silver;
+  background-size: cover;
+  background-position: center;
+  animation: colorAnimation6;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+.sushi3 {
+  height: 200px;
+  width: 45%;
+  background-color: silver;
+  background-size: cover;
+  background-position: center;
+  animation: colorAnimation7;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+.sushi4 {
+  height: 200px;
+  width: 45%;
+  background-color: silver;
+  background-size: cover;
+  background-position: center;
+  animation: colorAnimation8;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes colorAnimation5 {
+  from {
+    background-image: url("https://yaponamama.uz/_next/image?url=https%3A%2F%2Fcdn.delever.uz%2Fdelever%2F1f966356-5a8e-4aac-82f7-aa9d10dfb515&w=3840&q=75");
+  }
+  to {
+    background-image: url("https://yaponamama.uz/_next/image?url=https%3A%2F%2Fcdn.delever.uz%2Fdelever%2Fd434164e-de17-4760-aa1d-f39315f22338&w=3840&q=75");
+  }
+}
+
+@keyframes colorAnimation6 {
+  from {
+    background-image: url("https://yaponamama.uz/_next/image?url=https%3A%2F%2Fcdn.delever.uz%2Fdelever%2F40b92478-81a1-442c-861f-7e093d2f3603&w=3840&q=75");
+  }
+  to {
+    background-image: url("https://yaponamama.uz/_next/image?url=https%3A%2F%2Fcdn.delever.uz%2Fdelever%2F1a978a3d-3a4b-4555-b4b9-b7ec1c3766ee&w=3840&q=75");
+  }
+}
+
+@keyframes colorAnimation7 {
+  from {
+    background-image: url("https://yaponamama.uz/_next/image?url=https%3A%2F%2Fcdn.delever.uz%2Fdelever%2Ffa1d3e56-e6ba-4cf3-9421-aeb99e7c4135&w=3840&q=75");
+  }
+  to {
+    background-image: url("https://yaponamama.uz/_next/image?url=https%3A%2F%2Fcdn.delever.uz%2Fdelever%2Fad84858b-4a42-4dac-984f-de78c541e165&w=3840&q=75");
+  }
+}
+@keyframes colorAnimation8 {
+  from {
+    background-image: url("https://yaponamama.uz/_next/image?url=https%3A%2F%2Fcdn.delever.uz%2Fdelever%2Fcba98ed7-1ce8-4a35-92c8-289f1f700a9b&w=3840&q=75");
+  }
+  to {
+    background-image: url("https://yaponamama.uz/_next/image?url=https%3A%2F%2Fcdn.delever.uz%2Fdelever%2Fbbd367c3-dfde-46c7-bc2b-6f8b0402a2e8&w=3840&q=75");
+  }
+}
+
+table {
+  width: 100%;
+  text-align: center;
+  border-radius: 15px;
+  border: 10px solid rgb(209, 183, 122);
+  background-image: url(https://i.pinimg.com/474x/c0/34/81/c03481b4e9d96164a3c211a56130342b.jpg);
+  background-size: cover;
+}
+th,
+td {
+  border-bottom: 1px solid rgba(128, 128, 128, 0.273);
+  padding: 10px;
+  color: rgb(4, 24, 76);
+}

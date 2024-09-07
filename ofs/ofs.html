@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bellefair&family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Edu+VIC+WA+NT+Beginner:wght@400..700&family=Playwrite+CU:wght@100..400&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bellefair&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Edu+VIC+WA+NT+Beginner:wght@400..700&family=Playwrite+CU:wght@100..400&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bellefair&family=Edu+VIC+WA+NT+Beginner:wght@400..700&family=Playwrite+CU:wght@100..400&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bellefair&family=Edu+VIC+WA+NT+Beginner:wght@400..700&display=swap');
+        *{
+            margin:0;
+            padding: 0;
+        }
+        header{
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 0 10%;
+height: 15vh;
+position: absolute;
+right: 0;
+left: 0;
+
+
+        }
+        header img{
+            width: 110px;
+        }
+        .hero{
+          background-image: url(https://cdnz.blacklapel.com/thecompass/2018/11/best-suit-colors-LEDE.gif);
+            /* background-image: url(https://e0.pxfuel.com/wallpapers/358/918/desktop-wallpaper-gentlemen-gentleman-suit.jpg); */
+            background-size: cover;
+            background-position: top;
+            background-attachment: fixed;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+
+        }
+        nav{
+display: flex;
+gap: 2rem;
+justify-content: center;
+align-items: center;
+        }
+        nav a{
+            text-decoration: none;
+            text-transform: uppercase;
+            color:rgb(124, 121, 99);
+        }
+        nav a:hover{
+          background-color: rgb(206, 54, 54);
+          border-radius: 4rem;
+          padding: 1rem;
+          color: white;
+        }
+        section{
+            padding: 0 10%;
+        }
+        .hero h1{
+            font-size: 4rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            width: 60%;
+            color: rgb(248, 241, 229);
+        }
+        p{
+            font-size: 1.5rem;
+            width: 60%;
+            font-weight: 300;
+            color: rgb(248, 241, 229) ;
+        }
+.about{
+
+    background-color: black;
+    display: flex;
+    padding: 0;
+}
+
+.about>div{
+  flex: 1;
+}
+
+.about-img {
+  background-image: url(https://peterpanos.com/wp-content/uploads/shutterstock_720994834.jpg);
+background-size: cover;
+background-position: top;
+background-attachment: fixed;
+
+}
+.about h1{
+  font-family: "Chakra Petch", sans-serif;
+    color: white;
+padding-top: 10rem;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 300;
+
+  
+}
+
+
+.title{
+    /* background-image: url(https://png.klev.club/uploads/posts/2024-04/png-klev-club-0tbw-p-ornament-zolotoi-png-9.png);
+    background-size: contain;
+    background-repeat:no-repeat;
+    background-position: center;
+    padding: 2rem; */
+
+
+}
+.about-content{
+    display:flex ;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+}
+.about-content h3{
+  font-size: 16px;
+  color: rgb(207, 197, 197);
+  font-family: "Playwrite CU", cursive;
+}
+.about-content p{
+font-size: 16px;
+color: rgb(171, 165, 165);
+font-weight: 200;
+letter-spacing: 4px;
+font-family: "Crimson Text", serif;
+}
+
+.title2{
+  padding:0 3rem;
+}
+
+
+.card {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+  padding: 1rem;
+
+  text-align: center;
+  color: whitesmoke;
+  background-color: rgb(213, 213, 213);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1), 0 4px 4px rgba(0, 0, 0, 0.1), 0 8px 8px rgba(0, 0, 0, 0.1), 0 16px 16px rgba(0, 0, 0, 0.1);
+}
+@media (min-width: 600px) {
+  .card {
+    height: 350px;
+  }
+}
+.card:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 110%;
+  background-size: cover;
+  background-position: 0 0;
+  transition: transform calc(var(--d) * 1.5) var(--e);
+  pointer-events: none;
+}
+.card:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 200%;
+  pointer-events: none;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.009) 11.7%, rgba(0, 0, 0, 0.034) 22.1%, rgba(0, 0, 0, 0.072) 31.2%, rgba(0, 0, 0, 0.123) 39.4%, rgba(0, 0, 0, 0.182) 46.6%, rgba(0, 0, 0, 0.249) 53.1%, rgba(0, 0, 0, 0.32) 58.9%, rgba(0, 0, 0, 0.394) 64.3%, rgba(0, 0, 0, 0.468) 69.3%, rgba(0, 0, 0, 0.54) 74.1%, rgba(0, 0, 0, 0.607) 78.8%, rgba(0, 0, 0, 0.668) 83.6%, rgba(0, 0, 0, 0.721) 88.7%, rgba(0, 0, 0, 0.762) 94.1%, rgba(0, 0, 0, 0.79) 100%);
+  transform: translateY(-50%);
+  transition: transform calc(var(--d) * 2) var(--e);
+}
+.card:nth-child(1):before {
+  background-image: url(https://img4.dhresource.com/webp/m/0x0/f3/albu/km/o/15/6d06e550-5b48-4fcd-8bde-5198525e73b4.jpg);
+  background-position: center;
+}
+.card:nth-child(2):before {
+  background-image: url(https://cdn11.bigcommerce.com/s-pkla4xn3/images/stencil/1280x1280/products/7717/70463/Jacket-Vest-Pants-2018-High-quality-Men-Suits-Fashion-grid-stripe-Men-s-Slim-Fit__71054.1602670899.jpg?c=2);
+  background-position: center;
+}
+.card:nth-child(3):before {
+  background-image: url(https://d2j6dbq0eux0bg.cloudfront.net/images/42740142/2778699589.jpg);
+  background-position: center;
+}
+.card:nth-child(4):before {
+  background-image: url(https://media.karousell.com/media/photos/products/2023/9/10/mens_bespoke_suits_1694333499_7d22fe84.jpg);
+  background-position: center;
+}
+.card:nth-child(5):before {
+  background-image: url(https://sc04.alicdn.com/kf/H365ca9ad074e4fc2a494a19ff90656b8l.jpg);
+  background-position: center;
+}
+.card:nth-child(6):before {
+  background-image: url(https://m.media-amazon.com/images/I/61d83uVvwIL._AC_SX679_.jpg);
+  background-position: center;
+}
+.card:nth-child(7):before {
+  background-image: url(https://img4.dhresource.com/webp/m/0x0/f3/albu/km/o/25/0c0bee19-7cfa-42b6-9cc1-d113e65a9e2c.jpg);
+  background-position: center;
+}
+.card:nth-child(8):before {
+  background-image: url(https://img4.dhresource.com/webp/m/0x0/f3/albu/km/z/28/23956069-d019-4f1b-b521-99d88df6ddff.jpg);
+  background-position: center;
+}
+.card:nth-child(9):before {
+  background-image: url(https://img.fruugo.com/product/4/74/880411744_0340_0340.jpg);
+  background-position: center;
+}
+.card:nth-child(10):before {
+  background-image: url(https://img.fruugo.com/product/9/71/880411719_max.jpg);
+  background-position: center;
+}
+.card:nth-child(11):before {
+  background-image: url(https://img.joomcdn.net/b43d4cc072986920dbfbd97a1d6aad281f27a66b_original.jpeg);
+  background-position: center;
+}
+.card:nth-child(12):before {
+  background-image: url(https://www.dhresource.com/webp/m/0x0/f2/albu/g19/M01/0A/A5/rBVapmDzKpyAQG7vAACxjPOtpgU753.jpg);
+  background-position: center;
+}
+
+.content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
+  transition: transform var(--d) var(--e);
+  z-index: 1;
+}
+.content > * + * {
+  margin-top: 1rem;
+}
+
+.title {
+  font-size: 1.3rem;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.copy {
+  font-family: var(--font-serif);
+  font-size: 1.125rem;
+  font-style: italic;
+  line-height: 1.35;
+}
+
+.btn {
+  cursor: pointer;
+  margin-top: 1.5rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 0.65rem;
+  font-weight: bold;
+  letter-spacing: 0.025rem;
+  text-transform: uppercase;
+  color: white;
+  background-color: black;
+  border: none;
+  border-radius: 20px;
+}
+.btn:hover {
+  background-color: #789fda;
+
+}
+.btn:focus {
+  outline: 2px dashed rgb(232, 18, 18);
+  outline-offset: 3px;
+}
+
+@media (hover: hover) and (min-width: 600px) {
+  .card:after {
+    transform: translateY(0);
+  }
+
+  .content {
+    transform: translateY(calc(100% - 4.5rem));
+  }
+  .content > *:not(.title) {
+    opacity: 0;
+    transform: translateY(1rem);
+    transition: transform var(--d) var(--e), opacity var(--d) var(--e);
+  }
+
+  .card:hover,
+.card:focus-within {
+    align-items: center;
+  }
+  .card:hover:before,
+.card:focus-within:before {
+    transform: translateY(-4%);
+  }
+  .card:hover:after,
+.card:focus-within:after {
+    transform: translateY(-50%);
+  }
+  .card:hover .content,
+.card:focus-within .content {
+    transform: translateY(0);
+  }
+  .card:hover .content > *:not(.title),
+.card:focus-within .content > *:not(.title) {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: calc(var(--d) / 8);
+  }
+
+  .card:focus-within:before, .card:focus-within:after,
+.card:focus-within .content,
+.card:focus-within .content > *:not(.title) {
+    transition-duration: 0s;
+  }
+}
+
+.cards {
+    display: grid;
+  grid-gap: 1rem;
+  padding: 1rem;
+  max-width: 1024px;
+  margin: 0 auto;
+  font-family: var(--font-sans);
+}
+
+@media (min-width: 600px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 800px) {
+  .cards {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+.product {
+    background-image: url(https://media.istockphoto.com/id/1470198552/vector/gold-background.jpg?s=612x612&w=0&k=20&c=e0Mz0kTAkwnp8yCKAqQz-1K8wUiPVkdgOluJqDrRcnE=);
+    background-size: cover;
+    background-position: top;
+background-attachment: fixed;
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    
+
+}
+ .title {
+    background-image: url(https://png.klev.club/uploads/posts/2024-04/png-klev-club-ydjq-p-uzori-zoloto-png-21.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+} 
+h2.title {
+    background: linear-gradient(to bottom, #cfc09f 27%, #ffecb3 40%, #3a2c0f 78%); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #fff;
+}
+footer {
+  display: flex;
+ 
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 5rem;
+  gap: 2rem;
+color: white;
+background-color: gold;
+}
+footer div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+footer p{
+  font-size: 1.3rem;
+font-weight: 500;
+font-family: "Edu VIC WA NT Beginner", cursive;
+color: black;
+}
+footer h2{
+  color: black;
+  text-align: center;
+  
+}
+.icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:6rem;
+  padding: 30px;
+background-color: gold;}
+.icon img{
+  width: 2rem;
+
+}
+
+
+    </style>
+</head>
+<body>
+ <header>
+    <img  src="https://images.squarespace-cdn.com/content/v1/650dbf907ade9040a8c9ccea/883a515f-be7e-4e85-aae5-8b12b447783d/Tercey+Logo+-+Simple+NoText+%281%29.png" alt="">
+    <nav>
+<a href="">Services</a>
+<a href="">Experience</a>
+<a href="">Product</a>
+<a href="">Contact</a>
+    </nav>
+ </header> 
+ <main>
+<section class="hero">
+
+<h1>Crafted Excellence Tailored to Perfection </h1>
+</section>
+<section class="about">
+
+<div class="about-content">
+  <div class="title">
+    <h1>General information</h1>
+</div>
+<div class="title2">
+<div>
+  <h3> <span style="background-color: #f7d30bae; border-radius: 20px;" >The OFS company has been sewing men's</span>  suits in Uzbekistan for 20 years, being one of the founders of a new direction in clothing sewing in the country.
+  </h3>
+  <p>Our specialists regularly visit exhibitions on this type of goods, study the market and fashion trends, and are constantly searching for new youth models. Using modern technologies in the clothing industry, OFS has become one of the largest companies that produces a full range of high-quality men's classic clothing</p>
+</div>
+<div>
+  <h3> <span style="background-color: #f7d30bae; border-radius: 20px;">Business, wedding, classic</span> and youth models of men's trouser suits, jackets, trousers, children's trouser suits and women's suits.</h3>
+  <p>In the large design hall of the OFS fashion house in a pleasant atmosphere in the very center of Bukhara you can choose and order suits made according to your individual measurements.</p>
+</div>
+<div>
+  <h3> <span style="background-color: #f7d30bae; border-radius: 20px;"> Our brands “OFS”,</span> “ARMADA”, “FORVARD”, “STATUS”, “CARLTON”, “ALBILIO”, “EGIGAST”, “DIE HARD”, “GERAR”, “VIATTI”</h3>
+  <p>Guarantee comfort during wearing and high-quality appearance of products, which is preserved for a long time.
+    "OFS" has a large customer base, which is due to the optimal price-quality ratio.</p>
+</div>
+<div>
+  <h3> <span style="background-color: #f7d30bae; border-radius: 20px;">Our products are bought both</span> in Uzbekistan and in neighboring foreign countries.</h3>
+  <p>We offer wholesale buyers regularly updated collections, selecting the most interesting materials.
+    The OFS company always values ​​the trust of its potential partners.</p>
+</div>
+</div>
+</div>
+<div class="about-img">
+</div>
+</section>
+<section class="product">
+    <div class="cards">
+        <div class="card">
+            <div class="content">
+              <h2 class="title">Mountain View</h2>
+              <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
+              <button class="btn">View Trips</button>
+            </div>
+          </div>
+
+
+        <div class="card">
+            <div class="content">
+              <h2 class="title">Mountain View</h2>
+              <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
+              <button class="btn">View Trips</button>
+            </div>
+          </div>
+
+    
+        <div class="card">
+            <div class="content">
+              <h2 class="title">Mountain View</h2>
+              <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
+              <button class="btn">View Trips</button>
+            </div>
+          </div>
+
+        <div class="card">
+            <div class="content">
+              <h2 class="title">Mountain View</h2>
+              <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
+              <button class="btn">View Trips</button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="content">
+              <h2 class="title">Mountain View</h2>
+              <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
+              <button class="btn">View Trips</button>
+            </div>
+          </div>
+  
+    
+        <div class="card">
+            <div class="content">
+              <h2 class="title">Mountain View</h2>
+              <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
+              <button class="btn">View Trips</button>
+            </div>
+          </div>
+  
+        <div class="card">
+            <div class="content">
+              <h2 class="title">Mountain View</h2>
+              <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
+              <button class="btn">View Trips</button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="content">
+              <h2 class="title">Mountain View</h2>
+              <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
+              <button class="btn">View Trips</button>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="content">
+              <h2 class="title">Mountain View</h2>
+              <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
+              <button class="btn">View Trips</button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="content">
+              <h2 class="title">Mountain View</h2>
+              <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
+              <button class="btn">View Trips</button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="content">
+              <h2 class="title">Mountain View</h2>
+              <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
+              <button class="btn">View Trips</button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="content">
+              <h2 class="title">Mountain View</h2>
+              <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
+              <button class="btn">View Trips</button>
+            </div>
+          </div>
+        </div>
+
+    
+      </div>
+
+
+
+</section>
+
+ </main>  
+ 
+
+ <footer>
+  <div>
+    <h2>ADDRESS</h2>
+    <p>Uzbekistan, Bukhara region, Bukhara, st. Islama Karimova, 29</p>
+   
+  </div>
+  <div>
+    <h2>SUPERVISOR</h2>
+    <p>OLIM FOZILOV</p>
+  </div>
+  <div>
+   
+   <h2>COMPANY PHONES</h2>
+   <p>+998 (91) 407-50-00</p>
+  </div>
+
+ </footer>
+ <div class="icon">
+  <img src="https://cdn-icons-png.flaticon.com/512/59/59439.png"alt="">
+  <img src="/tashken.city/icon-instagram.svg" alt="">
+  <img src="/tashken.city/icon-telegram.svg" alt="">
+</div>
+</body>
+</html>
