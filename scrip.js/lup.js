@@ -52,14 +52,14 @@ console.log(totalNumber);
 console.log(totalNegative);*/
 
 
-/*let fruits = ['Apple', 'Banana','Apple','Mango','Apple','Pineapple'];
+let fruits = ['Apple', 'Banana','Apple','Mango','Apple','Pineapple'];
 let counter = 0;
 for(let i = 0; i < fruits.length;i++ ){
     if(fruits[i]==='Apple'){
         counter++;
     }
 }
-console.log(counter + 'apples found in the list')*/
+console.log(counter + 'apples found in the list')
 
 let number = [1,2,3,4,5,6,7,8,9,10];
 for(let i = 0; i < number.length; i++){
