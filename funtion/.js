@@ -13,9 +13,9 @@
 checkPassword(1991)*/
 
 
-/*function canculetDiscound(price,discound){
+function canculetDiscound(price,discound){
     return price - (price * discound / 100)
 }
-console.log(canculetDiscound(100,20))*/
+console.log(canculetDiscound(100,20))
 
 

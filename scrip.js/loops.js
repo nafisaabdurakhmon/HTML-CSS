@@ -34,12 +34,12 @@
 // }
 // console.log(` found ` + counter + ` numbers less than 5`);
 
-// let numberr = [10, 20, 30, 40, 50, 60];
-// let total = 0;
-// for (let i = 0; i < numberr.length; i++) {
-//   total = total + numberr[i];
-// }
-// console.log(total);
+ let numberr = [10, 20, 30, 40, 50, 60];
+ let total = 0;
+ for (let i = 0; i < numberr.length; i++) {
+   total = total + numberr[i];
+ }
+ console.log(total);
 
 // let studensGrades = [50, 60, 75, 85, 55, 10, 20, 90];
 // let pasCounter = 0;

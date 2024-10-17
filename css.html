@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+#one{
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  height: 50%;
+  width: 50%;
+  border-style: solid;
+  border-width: 5px;
+  background: rgba(227, 109, 245, 0.926);
+ transform: scale(1);
+  animation: pulse 5.11s infinite, rotationA  5.11s infinite; 
+}
+
+#two{
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  height: 50%;
+  width: 50%;
+  border-style: solid;
+  border-width: 5px;
+  background: rgba(124, 124, 221, 0.981);
+  transform: scale(1);
+  animation: pulse 10.213s infinite, rotationA 10.213s infinite; 
+}
+
+#three{
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  height: 50%;
+  width: 50%;
+  border-style: solid;
+  border-width: 5px;
+  background: rgba(223, 148, 8, 0.571);
+  transform: scale(1);
+  
+    animation: rotationA 9.125s infinite, pulse 9.125s infinite; 
+}
+
+#four{
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  height: 50%;
+  width: 50%;
+  border-style: solid;
+  border-width: 5px;
+  background: rgba(75, 176, 234, 0.621);
+  
+  animation: pulse 13s infinite; 
+  animation: rotationA 15s infinite, pusle 15s infinite; 
+}
+
+
+#five{
+  position: absolute;
+  
+  height: 100%;
+  width: 100%;
+  border-style: solid;
+  border-width: 5px;
+  background: rgba(239, 239, 17, 0.541);
+ transform: scale(1);
+  animation: pulse 5.231s infinite, rotationA  5.231s infinite; 
+}
+
+#six{
+  position: absolute;
+  
+  height: 100%;
+  width: 100%;
+  border-style: solid;
+  border-width: 5px;
+  background: rgba(0, 0, 255, 0.432);
+  transform: scale(1);
+  animation: pulse 10s infinite, rotationA 10s infinite; 
+}
+
+#seven{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-style: solid;
+  border-width: 5px;
+  background: rgba(38, 211, 38, 0.474);
+  transform: scale(1);  
+    animation: rotationA 9s infinite, pulse 9s infinite; 
+}
+
+#eight{
+  position: absolute;
+  ;
+  height: 100%;
+  width: 100%;
+  border-style: solid;
+  border-width: 5px;
+  background: rgba(206, 37, 37, 0.421);  
+  animation: rotationA 15s infinite, pusle 15s infinite; 
+}
+
+
+@keyframes pulse {
+  0% {
+    transform: scale(2);
+  
+  }
+
+  70% {
+    transform: scale(1);
+  
+  }
+
+  100% {
+    transform: scale(2);
+  
+  }
+}
+
+
+@keyframes rotationA {
+  50% {transform: rotate(180deg);
+    
+  }
+}
+</style>
+<body>
+    <div id='two'></div>
+<div id='three'></div>
+<div id='four'></div>
+
+
+<div id='six'></div> 
+<div id='seven'></div>
+<div id='eight'></div>
+</body>
+</html>
