@@ -60,4 +60,4 @@ let me = [
      age: 21 },
 
 ]
-console.log(me[2])
+console.log(me[0])

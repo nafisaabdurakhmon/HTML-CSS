@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtQS6KFGg4ZBaDji5PcDqi9SsW8dhkd_I2ybArgX2AX1OHyVasaWCbdbhmWU4hQz7kxdA&usqp=CAU);
+    background-size: cover;
+}
+.container{
+    background-color: cornsilk;
+    border:3px solid rgb(173, 194, 204) ;
+    padding: 2rem;
+ border-top-right-radius: 2rem;
+ border-bottom-left-radius: 2rem;
+}
+
+button{
+    padding: 10px 20px;
+    border-radius: 1rem;
+    background-color: rgb(33, 234, 140);
+    border: 1px solid rgb(33, 234, 140);
+}
+button:hover{
+    background-color:skyblue;
+}
+input{
+    padding: 10px 20px;
+    border-radius: 1rem;
+    border: 1px solid skyblue;
+}
+ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    gap: 1rem;
+}
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   padding: 2rem;
+   color: rgb(134, 154, 166);
+   font-size: 3rem;
+   font-weight: 500;
+}
+    </style>
+</head>
+<body>  
+<div class="container">
+    <h1>To-Do List</h1>
+<input type="text" id="task" placeholder="enter task" >
+
+<button id="add" onclick="addTask()" >Add Task</button>
+
+<ul id="tasklist">
+
+</ul>
+
+
+</div>
+
+
+
+    <script>
+let inputText = document.getElementById('task').value;
+let tasklist = document.getElementById('tasklist');
+
+function addTask(){
+    let inputText = document.getElementById('task').value;
+    let task= document.createElement('li');
+    task.textContent = inputText
+  
+let removeButton = document.createElement("button");
+removeButton.textContent = 'Remove';
+removeButton.style.backgroundColor = 'Red'
+removeButton.onclick = function(){
+    task.remove();
+};
+task.appendChild(removeButton);
+tasklist.appendChild(task);
+document.getElementById("task").value
+
+}
+
+    </script>
+</body>
+</html>

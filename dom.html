@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .card {
+        width: 200px;
+        height: 300px;
+      background-color: cornsilk;
+        margin: 3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <div class="card"></div> -->
+
+    <script>
+      let fruits = [
+      {
+          name: "mango",
+          image:
+            "https://sicarfarms.com/wp-content/uploads/2021/01/Mango.png",
+        },
+        {
+          name: "apple",
+          image:
+            "https://www.applesfromny.com/wp-content/uploads/2020/05/20Ounce_NYAS-Apples2.png",
+        },
+        {
+          name: "banana",
+          image:
+            "https://community.cloudflare.steamstatic.com/economy/image/a5HYp9Sw61Iks7TiNF57DFqT0e-WtnR84yvwcWpNrTTcGA/360fx360f",
+        },
+        {
+          name: "orange",
+          image:
+            "https://www.fervalle.com/wp-content/uploads/2022/07/transparent-orange-apple5eacfeae85ac29.7815306015883956945475-300x300.png",
+        },
+        {
+          name: "strawberry",
+          image:
+            "https://www.calgiant.com/wp-content/uploads/2021/08/berry-iso-straw-1-878x1024.png",
+        },
+      ];
+      for (let i = 0; i < fruits.length; i++) {
+        let div = document.createElement("div");
+        div.classList.add("card");
+        let image = document.createElement("img");
+        image.src = fruits[i].image;
+        image.width = 200;
+        image.alt = fruits[i].name;
+        document.body.appendChild(div);
+        div.appendChild(image);
+        // console.log(fruits[i].name + ' ' + fruits[i].image);
+      }
+    </script>
+  </body>
+</html>
