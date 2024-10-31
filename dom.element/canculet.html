@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+}
+body{
+        background-image: url(https://www.shutterstock.com/image-photo/view-office-space-business-tools-260nw-410181310.jpg);
+        background-size: cover;
+    }
+section{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center; 
+height: 100vh;
+gap: 1rem;
+
+}
+div{
+    display: flex;
+    gap: 20px;
+}
+h1{
+    font-size: 50px;
+    text-align: center;
+    color: aliceblue;
+}
+input{
+    padding: 15px 30px;
+    border-radius: 15px;
+    border: none;
+}
+select{
+    border: none;
+    border-radius: 10px;
+}
+button{
+    color: black;
+    border: none;
+    padding: 15px 40px;
+    border-radius: 15px;
+
+}
+   
+    </style>
+</head>
+<body>
+    
+
+<section>
+    <div>
+        <input type="number" id="num1">
+         <select name="operator" id="operator">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="div">/</option>
+         </select>
+        
+        <input type="number" id="num2">
+        </div>
+        <h1 id="results"></h1>
+        
+        <button onclick="calculate ()">calculate</button>
+</section>
+   
+   
+   
+   <script>
+const num1 = document.getElementById('num1');
+const num2 = document.getElementById('num2');
+const results = document.getElementById('results');
+const operator = document.getElementById('operator');
+const plus = operator.options[0].value
+const minus = operator.options[1].value
+const multiply = operator.options[2].value
+const devide = operator.options[3].value
+function calculate(){
+   const h1 = document.createElement('h1')
+
+    if(operator.value === "+"){
+ results.innerHTML =  Number(num1.value) + Number(num2.value);
+}
+else if(operator.value === '-'){
+    results.innerHTML = Number(num1.value) - Number(num2.value);
+}
+else if(operator.value === '*'){
+    results.innerHTML = Number(num1.value) * Number(num2.value);
+}
+else if(operator.value === 'div')
+results.innerHTML = Number(num1.value) / (num2.value);
+
+results.appendChild(h1);
+}
+
+    </script>
+</body>
+</html>

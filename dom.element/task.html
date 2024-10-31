@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7L114gQCrFSl1q55isT7q9e78SrGRoJVNKg&s);
+        background-size: cover;
+      
+        font-family: "Playwrite GB S", cursive;
+      }
+      section {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+       
+       
+      }
+      
+      .content{
+        background-color: cornsilk;
+    border:3px solid rgb(173, 194, 204) ;
+    padding: 30px;
+ border-top-right-radius: 2rem;
+ border-bottom-left-radius: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+      }
+    .content button{
+
+        padding:  9px 30px;
+        border: none;
+        border-radius: 15px;
+       
+      }
+      .content button:hover{
+        background-color: red;
+        color: white;
+      }
+      p{
+        color: deepskyblue;
+        font-size: 2rem;
+        font-weight: 900;
+      }
+      input{
+        padding:  10px 30px;
+        border: none;
+        border-radius: 15px;
+      }
+      .card button{
+        padding:  10px 10px;
+        border: none;
+        border-radius: 70px;
+       
+      }
+      .card button:hover{
+        background-color: dodgerblue;
+        color: white;
+     
+      }
+      .card{
+        display: flex;
+        gap: 2rem;
+      }
+      
+      
+    </style>
+  </head>
+  <body>
+    <section>
+ 
+       <div class="content">
+        <p>text</p>
+        <button onclick="changeText()">Chenge Text</button>
+       </div>
+     
+<!----------------->
+      
+        <div class="card">
+            <input type="text" id="item" value="" placeholder="ul"/>
+
+      <button onclick=" add()">add</button>
+      <ul></ul>
+        </div>
+
+<!----------------------->
+
+    </section>
+
+    <script>
+      const p = document.querySelector("p");
+      const input = document.querySelector("#item");
+      const ul = document.querySelector("ul");
+
+      function changeText() {
+        p.innerHTML = "hello world";
+        p.style.color = "gold";
+        p.classlist.toggle("background");
+      }
+
+      function add() {
+        const li = document.createElement("li");
+        li.innerHTML = input.value;
+        ul.appendChild(li);
+      }
+    </script>
+  </body>
+</html>

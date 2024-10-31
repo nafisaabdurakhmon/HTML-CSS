@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+*{
+    margin: 0;
+    padding: 0;
+}
+.text{
+    
+    color: red;
+}
+
+</style>
+<body>
+
+
+<h1 id="text1"></h1>
+<h1 class="text2"></h1>
+
+<ul>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+</ul>
+    <script>
+const h1 = document.createElement('h1');
+h1.innerHTML = 'hello world'
+h1.classList.add('text')
+document.body.appendChild(h1)
+
+
+const text1 = document.getElementById('text1')
+const text2 = document.querySelector('.text2')
+text1.textContent = 'text1';
+text2.textContent = 'text2';
+
+text1.style.color = 'cyan'
+text1.style.fontsize = '5rem'
+
+const lists = document.querySelector('li')
+
+
+const list = document.querySelectorAll(`li`)
+for(let i = 0; i < list.length; i ++){
+    let h2 = document.createElement('h2');
+    h2.textContent = i+1;
+    list[i].appendChild(h2)
+}
+    </script>
+</body>
+</html>
