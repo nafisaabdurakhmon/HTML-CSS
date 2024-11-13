@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(https://www.shutterstock.com/image-photo/concrete-floor-smoke-background-600nw-1696591468.jpg);
+    background-size: cover;
+scroll-behavior: smooth;
+    gap: 1rem;
+}
+    </style>
+</head>
+<body>
+
+
+
+
+
+    <script>
+const div = document.createElement('div');
+const div2 = document.createElement('div2');
+
+let cars = [
+'https://mediaservice.audi.com/media/fast/H4sIAAAAAAAAAFvzloG1tIiBOTrayfuvpGh6-m1zJgaGigIGBgZGoDhTtNOaz-I_2DhCHsCEtzEwF-SlMwJZKUycmbmJ6an6QD4_I3taTmV-aUkxO0grD4_mtjdhon8WqzxTuloW9jCg5pKXLgMrUBejG5Bg3gMk-LYBCU5pBjAJMm8qiOgB8ZkcmBkYWCuAjEgGEODjKy3KKUgsSszVK89MKckQ1DAgEgizu7iGOHr6BAMAkhIhZOkAAAA?wid=850',
+'https://apiweb.rolf.ru/storage/thumbnails/large/models/120/6859/110793bb1a8b686f42fdc089ae8e640f.png',
+'https://cdn.avtodom.ru/images/61/61/13289061.png?upscale=0&op=resize&w=720&format=webp',
+ ];
+
+
+         for (let i = 0; i < cars.length; i++){
+const img = document.createElement('img');
+img.src = cars[i];
+img.width = 300;
+div.appendChild(img)
+         }
+
+         let cars2 = [
+            'https://static-assets.tesla.com/configurator/compositor?context=design_studio_2?&bkba_opt=1&view=FRONT34&size=1400&model=ms&options=$MDLS,$MTS18,$PPSB,$WS91,$APBS,$SC04,$CPF0,$IBE00,$ST06&crop=1400,850,300,130&',
+            'https://image-server.autospot.ru/images/1/0/2/2/6/4/6475093/origin/6475093.png',
+'https://gld-creative.s3.us-west-2.amazonaws.com/2024-porsche-911-turbo-s-8b598d2db41f-600x300.png', ];
+
+
+         for (let i = 0; i < cars2.length; i++){
+const img = document.createElement('img');
+img.src = cars2[i];
+img.width = 300;
+div2.appendChild(img)
+         }
+         document.body.appendChild(div)
+         document.body.appendChild(div2)
+    </script>
+</body>
+</html>

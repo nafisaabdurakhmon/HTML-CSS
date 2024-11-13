@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .list{
+            background-color: rgb(189, 243, 243);
+        }
+    </style>
+</head>
+<body>
+    <h1></h1>
+
+
+    <ul id="list">
+
+    </ul>
+
+<input type="text" placeholder="enter">
+<button onclick="addFruits()">Add</button>
+    <script>
+const h1 = document.querySelector('h1')
+h1.innerHTML = 'hello world'
+
+const h2 = document.createElement('h2')
+h2.innerHTML = 'thank you'
+document.body.appendChild(h2)
+
+const fruits = [`apple`,`banana`,`mango`, `strawberry`]
+const ul = document.querySelector('#list')
+const input = document.querySelector(`input`);
+
+function addFruits(){
+    const fruit = input.value;
+    fruits.push(fruit);
+    const li = document.createElement('li');
+    li.innerHTML = fruit;
+    li.classList.add('list');
+    ul.appendChild(li);
+}
+
+for(let i = 0; i < fruits.length; i ++){
+    let li = document.createElement('li');
+    li.textContent = fruits[i];
+    li.classList.add('list');
+    ul.appendChild(li)
+   
+}
+    </script>
+</body>
+</html>

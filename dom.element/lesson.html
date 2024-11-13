@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+<ul></ul>
+
+
+
+
+    <script>
+        const ul = document.querySelector('ul');
+        let cars = ['aux','byd','bmw'];
+        function displayaray(aray) {
+  for (let i = 0; i < aray.length; i++) {
+    const li = document.createElement('li');
+    li.innerHTML = aray[i];
+    ul.appendChild(li)
+
+  }
+
+}
+
+displayaray(cars);
+    </script>
+</body>
+</html>
