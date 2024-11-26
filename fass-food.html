@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        text-align: center;
+        background-color: black;
+        
+      }
+      .cards {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        padding: 2rem;
+      }
+      .card {
+        display: flex;
+        flex: 1;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        color: wheat;
+        padding: 1rem;
+        gap: 1rem;
+        border: 1px solid gray;
+        border-radius: 10px;
+      }
+      .card:hover {
+        background-color: lightgray;
+      }
+
+      .video {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem;
+        flex-direction: column;
+      }
+      .images {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+        padding: 2rem;
+      }
+      .images img {
+        width: 24%;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 10px;
+      }
+      .logo {
+        border: 20px solid white;
+        margin-top: 50px;
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <img class="logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMxNH08x3ZndoKmj_cYOImh-cxMr7guzknyqEV0jM26X_GUcERnw8CJO7Y0vH6ZRanB28&usqp=CAU" alt="">
+    <div class="cards">
+      <div class="card" onclick="pizza()">
+        <img
+          width="100%"
+          src="https://content.jdmagicbox.com/v2/comp/delhi/p7/011pxx11.xx11.220406151541.k8p7/catalogue/new-oven-pizza-restaurant-tughlakabad-extension-delhi-pizza-outlets-r52d6tqz3f.jpg"
+          alt=""
+        />
+        <h2>Pizza</h2>
+      </div>
+      <div class="card" onclick="burger()">
+        <img
+          width="100%"
+          src="https://www.shutterstock.com/image-photo/burger-tomateoes-lettuce-pickles-on-600nw-2309539129.jpg"
+          alt=""
+        />
+        <h2>Burger</h2>
+      </div>
+      <div class="card" onclick="kfc()">
+        <img
+          width="100%"
+          src="https://assets.simpleviewinc.com/simpleview/image/upload/c_fill,h_610,q_75,w_910/v1/crm/yorkcountysc/KFC3_586e7086-5056-a36a-0bbe25082cfd6eb3.png"
+          alt=""
+        />
+        <h2>Kfc</h2>
+      </div>
+      <div class="card" onclick="salad()">
+        <img
+          width="90%"
+          src="https://www.nzavocado.co.nz/wp-content/uploads/2018/11/Orange_and_Avocado_Salad_with_Orange_Mustard_Dressing-1024x773.png"
+          alt=""
+        />
+        <h2>Salad</h2>
+      </div>
+    </div>
+    <div class="video">
+      <div class="images">
+        <img
+          id="img1"
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Pizza-3007395.jpg/800px-Pizza-3007395.jpg"
+          alt=""
+        />
+        <img
+          id="img2"
+          src="https://media.istockphoto.com/id/1349560847/photo/sausage-and-vegetable-pizza-on-dark-background.jpg?s=612x612&w=0&k=20&c=VjDdBc_WrHh9dqI8jCSEoI1jeWQDVSdXOJJ5LijQoRA="
+          alt=""
+        />
+        <img
+          id="img3"
+          src="https://i.pinimg.com/736x/24/16/85/2416852ecd4499cda91de41e17140909.jpg"
+          alt=""
+        />
+        <img
+          id="img4"
+          src="https://cookingwithcarbs.com/wp-content/uploads/2021/06/spicy-sausage-pizza-final8-min.jpg"
+          alt=""
+        />
+      </div>
+      <iframe
+        id="video"
+        width="80%"
+        height="500px"
+        src="https://www.youtube.com/embed/Y6MHE0-CQAs?si=FPONZHSNsyBKszGH"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+      ></iframe>
+    </div>
+    <script>
+      const iframe = document.getElementById("video");
+      const img1 = document.getElementById("img1");
+      const img2 = document.getElementById("img2");
+      const img3 = document.getElementById("img3");
+      const img4 = document.getElementById("img4");
+
+      function pizza() {
+        iframe.src =
+          "https://www.youtube.com/embed/Y6MHE0-CQAs?si=FPONZHSNsyBKszGH";
+        img1.src =
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Pizza-3007395.jpg/800px-Pizza-3007395.jpg";
+        img2.src =
+          "https://media.istockphoto.com/id/1349560847/photo/sausage-and-vegetable-pizza-on-dark-background.jpg?s=612x612&w=0&k=20&c=VjDdBc_WrHh9dqI8jCSEoI1jeWQDVSdXOJJ5LijQoRA=";
+        img3.src =
+          "https://i.pinimg.com/736x/24/16/85/2416852ecd4499cda91de41e17140909.jpg";
+        img4.src =
+          "https://cookingwithcarbs.com/wp-content/uploads/2021/06/spicy-sausage-pizza-final8-min.jpg";
+      }
+      function burger() {
+        iframe.src =
+          "https://www.youtube.com/embed/V5w1OGknhlc?si=QiobKGmDeeBscyWJ";
+        img1.src =
+          "https://www.recipetineats.com/tachyon/2023/09/Crispy-fried-chicken-burgers_5.jpg";
+        img2.src =
+          "https://www.certifiedangusbeef.com/_next/image?url=https%3A%2F%2Fappetizing-cactus-7139e93734.media.strapiapp.com%2FClassic_Smashed_Burger_111c4bfdb7.jpeg&w=3840&q=75";
+        img3.src =
+          "https://www.tastingtable.com/img/gallery/what-makes-restaurant-burgers-taste-different-from-homemade-burgers-upgrade/intro-1662064407.jpg";
+        img4.src =
+          "https://img.freepik.com/premium-photo/burger-with-layers-veggies-black-abstract-background_582637-993.jpg";
+      }
+      function kfc() {
+        iframe.src =
+          "https://www.youtube.com/embed/-Un8IOE_7mg?si=0FYcbc49pnu9Ebxd";
+        img1.src = "https://images.jdmagicbox.com/comp/delhi/a5/011pxx11.xx11.191129200330.r1a5/catalogue/kfc-dabri-delhi-fast-food-0cw2qlrm9j.jpg";
+        img2.src = "https://tb-static.uber.com/prod/image-proc/processed_images/5c3e89117e503ae58c4aa5dbed6bbd5b/3ac2b39ad528f8c8c5dc77c59abb683d.jpeg";
+        img3.src = "https://content.7krave.com/restaurants/169/images/8632/a_169_r_169_8632_large.jpg";
+        img4.src = "https://i.ytimg.com/vi/YGhuB5KgA4M/hq720.jpg?sqp=-oaymwE7CK4FEIIDSFryq4qpAy0IARUAAAAAGAElAADIQj0AgKJD8AEB-AH-CYAC0AWKAgwIABABGH8gSSgXMA8=&rs=AOn4CLDLjxsBZNHnDCVe5omP5nDWeIL5nw";
+      }
+      function salad() {
+        iframe.src =
+          "https://www.youtube.com/embed/DzSSUU37ynQ?si=ESwrBbtCsmFyIb7C";
+        img1.src = "https://hips.hearstapps.com/hmg-prod/images/greek-salad-index-642f292397bbf.jpg?crop=0.888888888888889xw:1xh;center,top&resize=1200:*";
+        img2.src = "https://www.munchkintime.com/wp-content/uploads/2019/11/Best-Caesar-Salad-Recipe-with-Salad-Dressing-from-Scratch-2-360x360.jpg";
+        img3.src = "https://feelgoodfoodie.net/wp-content/uploads/2019/02/Mediterranean-Chopped-Salad-12.jpg";
+        img4.src = "https://www.allrecipes.com/thmb/Q84xeMgnOJPZAUOdNyrb9dbFZr4=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/285625-ChefsSalad_MFS_006-2550ecee70ae46dbaec530a58314c99c.jpg";
+      }
+    </script>
+  </body>
+</html>

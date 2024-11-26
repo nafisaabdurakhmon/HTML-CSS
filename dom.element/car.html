@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        font-family: "Josefin Sans", sans-serif;
+        font-size: 20px;
+        font-weight: 500;
+    }
+    section {
+      height: 100vh;
+      background-image: url(https://www.shutterstock.com/image-photo/concrete-floor-smoke-background-600nw-1696591468.jpg);
+      background-size: cover;
+      display: flex;
+      justify-content: end;
+      align-items: center;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: transparent;
+      height: 10vh;
+      position: absolute;
+      left: 0;
+      right: 0;
+    }
+    nav {
+      display: flex;
+      gap: 1.5rem;
+    }
+    nav img {
+      width: 100px;
+      padding: 10px;
+
+    }
+    button:hover {
+      background-color: rgb(1, 1, 1);
+      color: white;
+      border: 1px solid white;
+
+    }
+    h1{
+        color: white;
+    }
+</style>
+<body>
+    <header>
+        <nav>
+          <img src="https://image-server.autospot.ru/images/1/0/2/2/1/2/1271588/origin/1271588.webp" alt="" width="200" onclick="mercedes()">
+         <img src="https://platform.cstatic-images.com/in/v2/stock_photos/e74b9fc3-5d68-4746-a779-91b3d7f7bf0b/662ad619-8301-4c97-bb4e-0d7775cde919.png" alt="" width="200" onclick="BMW()">
+    <img src="https://s3.bossautoukraine.com.ua/electric/tesla_model_3.png" alt="" width="200" onclick="Tesla()">
+    <img src="https://configurator.porsche.com/model-start/pictures/718/extcam01.webp" alt="" width="200" onclick="Porsche()">
+          
+        </nav>
+      </header>
+      <section>
+        <img
+          width="100px"
+          class="car-logo"
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Mercedes-Logo.svg/2048px-Mercedes-Logo.svg.png"
+          alt=""
+        />
+        <h1 class="car-title">mercedes-benz AMG</h1>
+        <img
+          width="50%"
+          class="car"
+          src="https://image-server.autospot.ru/images/1/0/2/2/6/4/6475093/origin/6475093.png"
+          alt=""
+        />
+      </section>
+
+
+
+    <script>
+const carlogo = document.querySelector('.car-logo')
+              const cartitle = document.querySelector('.car-title')
+              const car = document.querySelector('.car')
+
+
+              function mercedes(){
+                  carlogo.src = 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Mercedes-Logo.svg/2048px-Mercedes-Logo.svg.png'
+                  cartitle.innerHTML = 'Mercedes-benz AMG'
+                  car.src = 'https://dreamcars.by/upload/iblock/d2d/d2daf815288343c572b41ef8c3e0bf86.png'
+              }
+
+              function BMW(){
+      carlogo.src ='https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/BMW.svg/768px-BMW.svg.png'
+      cartitle.innerHTML = 'All BMW Models & Pricing'
+      car.src = 'https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kOHUtWPfbYfvKsd10tLhu1XzWVo7puMLWFmdkAj5DOPMtExZ8XgY1nTNIowJ4HO3zkyXq%25sGM8snGhMQSk%2508Xc9Vo74giZ5NF1VgxNJ0%25lI2oub5imC2yRCzXeTt%25ViPRKVZVYpzsWh1DMzti08eqVYDafHLojmztYRSJyR67aftxdIXCw1RSfWQvC0%25VxdSeZGqjuzWQdjc9qj3aeZQ6KCInXRjcZwBEnmrx6Kc%252Nu74WwBKupk3IFe%252B3in2ZIjup2XH5psv63iprJ8V%25GwXHi4TPBA9%25rJHFlM2oou4TJIsDxgL3FlTv0YheyXIslGAtq%25Crv0s9Of8zE4GA0ogSYTNF9OALUdtvkIogOybQfanvLUgChOU45GybUEqgup89ChbNmUfNPoEqhk7bSEMLNmqn1hdmDyk7m5VqGhYCn178zm9dtE5V1PaZcPfN8zVMRcKDSkPazDxKBsdnMRaYWB4LQ5DxRte2vFZ8YWxfjpTCcPteWS6i1iKMfjedwSbRBDS6jQ%25dh22Ydw6ZuQWWptQ%25wc3ZqiifZu%25KXcC0HSc3uBrBVwJdKX324mBQTQLXg7AF3D%25zhrLGwg6QuiVpRBn5Y3'
+              }
+              function Tesla  (){
+      carlogo.src ='https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Tesla_logo.png/1024px-Tesla_logo.png'
+      cartitle.innerHTML = '2024 Tesla Cybertruck Prices, Reviews'
+      car.src = 'https://www.motortrend.com/uploads/2021/11/2021-Tesla-Cybertruck.png?w=768&width=768&q=75&format=webp'
+              }
+              function Porsche(){
+      carlogo.src ='https://logos-world.net/wp-content/uploads/2021/06/Porsche-Logo-2014.png'
+      cartitle.innerHTML = 'Porsche Car Configuator'
+      car.src = 'https://configurator.porsche.com/model-start/pictures/718/extcam01.webp'
+              }
+    </script>
+</body>
+</html>
