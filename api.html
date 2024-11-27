@@ -9,22 +9,28 @@
             margin: 0;
             padding: 0;
         }
+        body{
+            background-color: darkgray;
+        }
     </style>
 </head>
 <body>
-    <input type="text">
+    <input type="text" id="search">
     <button onclick="searchBooks()">Search</button>
-<h1 id="title">title</h1>
+<h1 id="title">Title</h1>
 <img src="" alt="" id="poster">
     <script>
-        const api = 'https://www.omdbapi.com/?apikey=1bde6dda&t=https://www.omdbapi.com/?apikey=1bde6dda&t=';
+        const api = 'https://www.omdbapi.com/?apikey=1bde6dda&t=';
         const input = document.getElementById('search');
+        const title = document.getElementById('title')
+        const poster = document.getElementById('poster')
         function searchBooks(){
             fetch(api + input.value)
-            .then((reponse)=> response.json())
-            .then((dats) => {
-                console,log(data);
-                title 
+            .then((response) => response.json())
+            .then((data) => {
+                console.log(data);
+                title.textContent = data.Title;
+                poster.src = data.Poster
             })
         }
     </script>
