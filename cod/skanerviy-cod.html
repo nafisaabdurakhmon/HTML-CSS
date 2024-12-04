@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center; 
+            height: 100vh;
+            background-color: rgb(213 225 240);
+        }
+    
+            
+        
+    .card{
+        
+            display: flex;
+    border-radius: 1rem;
+    background-color: #2c7efa;
+    padding: 2.5rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+        }
+        button{
+            width: 60%;
+            padding: 0.4rem;
+            border-radius: 10px;
+            border: none;
+            font-size: 19px;
+        letter-spacing: 1px;
+        }
+        button:hover{
+            background-color: rgb(235, 225, 135);
+        }
+        input{
+            width: 80%;
+            padding: 0.6rem;
+            border-radius: 10px;
+            border: none;
+            font-size: 19px;
+        }
+        img{
+            width: 100%;
+        border-radius: 10px;
+        }
+        h1{
+            color: white;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="card">
+    <img src= ""  alt="" id="qrcode">
+<h1>QR Code Generator</h1>
+ 
+    <input type="text" id="data" placeholder="Enter your text URL">
+    <button onclick="geenered()">Geenered</button>
+    </div>
+
+ 
+    <script>
+        const input = document.querySelector('#data');
+        const image = document.querySelector('#qrcode');
+        const container = document.querySelector('container')
+        const card = document.querySelector('card')
+
+        function geenered(){
+            image.src = `https://api.apgy.in/qr/?data=${input.value}/&size=200`
+        }
+    </script>
+</body>
+</html
